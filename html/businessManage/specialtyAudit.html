@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>产品审核</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/businessManage/productAudit.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/Config.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path"  id="title_path">
+        <span>产品管理</span>
+        <span class="blue">>特产审核详情</span>
+    </div>
+    <div class="content_template" ui-view>
+        <div class="productAudit">
+            <form action="">
+                <div class="packageInfo">
+                    <header>
+                        <h2>特产信息</h2>
+                    </header>
+                    <section>
+                        <p><span>特产名称:</span><em></em></p>
+                        <p class="packageInfo_img"><span>特产首图:</span><em></em></p>
+                        <p><span>特产单位:</span><em></em></p>
+                    </section>
+                </div>
+                <div class="productPrice">
+                    <header>
+                        <h2>产品价格</h2>
+                    </header>
+                    <section>
+                        <p><span>分销价:</span><em></em></p>
+                        <p><span>市场价:</span><em></em></p>
+                    </section>
+                </div>
+                <div class="buyNotice">
+                    <header>
+                        <h2>产品介绍</h2>
+                    </header>
+                    <section>
+                       <div id="proAlbum">
+                       	<span>产品相册:</span>
+                       </div>
+                    </section>
+                </div>
+                <div class="auditInfo">
+                    <header>
+                        <h2>审核信息</h2>
+                    </header>
+                    <section>
+                        <p><span>备注</span><input type="text" placeholder="请填写审核原因"></p>
+                    </section>
+                </div>
+                <footer>
+                    <a href="productList.html">拒绝</a>
+                    <a href="javascript:void (0)" id="busSubmit">通过</a>
+                </footer>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../js/lib/jquery.page.js"></script>
+<script src="../../js/businessManage/specialtyAudit.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+<script src="../../js/lib/crypto-js.js"></script>
+
+
+</body>
+</html>

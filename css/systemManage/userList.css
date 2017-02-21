@@ -1,0 +1,186 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.content_template {
+  height: 90%;
+}
+.content_template .sysManage {
+  font-size: 1rem;
+  padding-top: 1.875rem;
+}
+.content_template .sysManage .userList {
+  padding-left: 2.5rem;
+}
+.content_template .sysManage .userList input {
+  width: 18.75rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+  margin-right: 2.375rem;
+  color: #333;
+}
+.content_template .sysManage .userList a {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 12.5rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+  color: #fff;
+}
+.content_template .sysManage .userList #search {
+  width: 9.375rem;
+  height: 3.125rem;
+}
+.content_template .sysManage .userList #add {
+  float: right;
+  margin-right: 20rem;
+}
+.content_template .sysManage .table {
+  margin-top: 3.125rem;
+  border-bottom: 1px solid #ccc;
+}
+.content_template .sysManage .table th {
+  height: 4.375rem;
+  line-height: 4.375rem;
+  background-color: #F5F5F5;
+  border: none;
+}
+.content_template .sysManage .table th:first-child {
+  padding-left: 2.5rem;
+}
+.content_template .sysManage .table td {
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 15.625rem;
+  border-top: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+.content_template .sysManage .table td:first-child {
+  width: 12.5rem;
+  padding-left: 2.5rem;
+}
+.content_template .sysManage .table td:nth-child(2) {
+  width: 15.625rem;
+}
+.content_template .sysManage .table td:nth-child(3) {
+  width: 9.5rem;
+}
+.content_template .sysManage .table td:nth-child(4) {
+  width: 13.75rem;
+}
+.content_template .sysManage .table td:nth-child(5) {
+  width: 16.25rem;
+}
+.content_template .sysManage .table td:nth-child(6) {
+  width: 9.375rem;
+}
+.content_template .sysManage .table img {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 1.25rem;
+}
+.content_template .sysManage .table a {
+  margin-right: 2.625rem;
+  color: #008cee;
+}
+
+#Modal .modal-content,
+#myModal .modal-content{
+  background-color: #FAFAFA;
+}
+#Modal .modal-header,
+#myModal .modal-header{
+  background-color: #008CEE;
+  color: #fff;
+}
+#Modal  .modal-body .dl-horizontal dd input,
+#myModal .modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 25rem;
+  height: 3.4285714285714284rem;
+}
+#Modal  .modal-footer,
+#myModal .modal-footer{
+  text-align: center;
+}
+
+#myModal .modal-body .dl-horizontal dt,
+#Modal .modal-body .dl-horizontal dt{
+  width: 12.5rem;
+  color: #a9a9a9;
+  line-height: 10.714285714285714rem;
+}
+#myModal .modal-body .dl-horizontal dd,
+#Modal .modal-body .dl-horizontal dd{
+  margin-left: 13.928571428571429rem;
+  line-height: 12.428571rem;
+}
+#myModal .modal-body .dl-horizontal dd p,
+#Modal .modal-body .dl-horizontal dd p{
+  margin-top: 3.5714285714285716rem;
+  line-height: 1.7857142857142858rem;
+  color: #747474;
+}
+#myModal .modal-footer #dis,#auditBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#myModal .modal-footer #dis{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#myModal .modal-footer  #auditBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}
+#Modal .modal-footer #dismiss,#submitBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#Modal .modal-footer #dismiss{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#Modal .modal-footer  #submitBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}
+
+
+.page {
+  width: 100%;
+  padding-right: 5rem;
+}
+.page .paging {
+  float: right;
+}
+.page .paging a,
+.page .paging span {
+  margin-left: 0.875rem;
+  color: #000;
+}
+.page .paging .current {
+  color: #008CEE;
+}
+.page .paging .next,
+.page .paging .prev {
+  color: #000;
+}
+.page p{
+	margin-left: 4rem;
+	float: left;
+}
+.page p span{
+	color: #008CEE;
+}
+.no-tit{
+	display: none;
+	color: #008CEE;
+	font-size: 2rem;
+	margin-left: 3rem;
+}

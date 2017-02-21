@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>用户列表</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/userList.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/Config.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path"  id="title_path">
+        <span>系统设置</span>
+        <span class="blue">>系统用户</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+                <div class="sysManage">
+                    <div class="userList">
+                            手机号&nbsp;&nbsp;
+                            <input type="text" placeholder="请输入手机号" class="searchTel" id="tel">
+                            姓名 &nbsp;
+                            <input type="text"  placeholder="请输入姓名" class="searchName" id="name">
+                            <a href="javascript:void (0)" id="search">查询</a>
+                            <a href="addUser.html" id="add">+新增</a>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>手机号</th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>创建者</th>
+                                <th>创建时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <img id="loadImg" src="../../images/load.gif"/>
+                    <p class="no-tit">暂无系统用户列表</p>
+                    <div class="page">
+                    	<p>共有 <span id="recordTotal"></span> 条</p>
+                        <div class="pagination paging"></div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- 审核模态视图 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/audit.png" alt=""/></dt>
+                    <dd>确定要冻结<span class="MerchantName"></span>的账号</dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dis">取消</button>
+                <button type="button" class="btn btn-primary" id="auditBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="ModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/audit.png" alt=""/></dt>
+                    <dd>确定要恢复<span class="MerchantName"></span>的账号</dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dismiss">取消</button>
+                <button type="button" class="btn btn-primary" id="submitBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr id="{{list.UserID}}">
+        <td>{{list.Mobile}}</td>
+        <td>{{list.Name}}</td>
+        <td>{{list.Sex}}</td>
+        <td>{{list.Creator}}</td>
+        <td>{{list.Create}}</td>
+        <td class="statusName">{{list.StatusName}}</td>
+        <td>
+            <!--<a href="javascript:void (0)"><img src="../images/set.png" alt=""></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/editor.png"></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/copy.png" alt=""></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/preview.png"></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/delect.png"></a>-->
+            <a href="javascript:void (0)" class="audit" id="{{list.Status}}">冻结</a>
+            <a href="javascript:void (0)" class="change">修改</a>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../js/lib/jquery.page.js"></script>
+<script src="../../js/systemManage/userList.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

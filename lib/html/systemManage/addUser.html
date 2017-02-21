@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>添加用户</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/addUser.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path">
+        <span>系统管理</span>
+        <span class="blue">>系统用户</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+                <div class="addUser">
+                    <form>
+                        <p>
+                            <span><i>* </i>手机号</span>
+                            <input type="tel" placeholder="请输入手机号" required="required" id="tel">
+                            <em class="help-block"><s></s>请输入正确的手机号</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>姓名</span>
+                            <input type="text" placeholder="请输入姓名" required="required" id="name">
+                            <em class="help-block"><s></s>姓名必须填写</em>
+                        </p>
+                        <div class="select" id="sex">
+                            <span><i>* </i>性别</span>
+                            <div><s></s>男</div>
+                            <div><s></s>女</div>
+                            <em class="help-block"><s></s>请勾选</em>
+                        </div>
+                        <p>
+                            <span><i>* </i>出生年月</span>
+                            <input type="text" placeholder="请选择"  class="workinput wicon mr25" id="inpstart" readonly required="required">
+                        </p>
+                        <a href="userList.html" class="cancel">取消</a>
+                        <a href="javascript:void (0)" id="userSubmit">保存</a>
+                    </form>
+                </div>
+            </div>
+</section>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jedate/jquery.jedate.min.js"></script>
+<script src="../../js/systemManage/addUser.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

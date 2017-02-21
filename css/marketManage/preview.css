@@ -1,0 +1,273 @@
+@charset "utf-8";
+.traveltailor .content section .title_path {
+  margin: 2.2857142857142856rem 0 1.4285714285714286rem 2.857142857142857rem;
+}
+.traveltailor .content section .content_template {
+  height: 100%;
+}
+.traveltailor .content section .content_template .add_find {
+  padding-left: 2.857142857142857rem;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find p span {
+  font-weight: bold;
+}
+.traveltailor .content section .content_template .add_find p input {
+  width: 61.714285714285715rem;
+  height: 3.5714285714285716rem;
+  margin-top: 1.4285714285714286rem;
+  margin-left: 1.5rem;
+}
+.traveltailor .content section .content_template .add_find .find_photo {
+  height: 13.571428571428571rem;
+}
+.traveltailor .content section .content_template .add_find .find_photo span:first-child {
+  float: left;
+  margin-top: 2.642857142857143rem;
+  font-weight: bold;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo {
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo #thelist {
+  display: none;
+  width: 14.285714285714286rem;
+  height: 14.285714285714286rem;
+  position: absolute;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo #filePicker .webuploader-pick {
+  margin-top: 1.4285714285714286rem;
+  float: left;
+  width: 14.285714285714286rem;
+  height: 10.714285714285714rem;
+  background: url("../images/photo.png");
+  margin-left: 1.7857142857142858rem;
+}
+.traveltailor .content section .content_template .add_find .find_photo span:last-child {
+  font-weight: 300;
+  float: left;
+  margin-top: 6.285714285714286rem;
+  margin-left: 1.5rem;
+}
+.traveltailor .content section .content_template .add_find .find_details {
+  margin-left: 5.714285714285714rem;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_details span {
+  position: absolute;
+  font-weight: bold;
+  top: 1.0714285714285714rem;
+  left: -5.714285714285714rem;
+}
+.traveltailor .content section .content_template .add_find .find_details #filePicker1 {
+  position: absolute;
+  height: 2.142857142857143rem;
+  width: 2.142857142857143rem;
+  top: 0.35714285714285715rem;
+  left: 42.857142857142854rem;
+  z-index: 9999;
+}
+.traveltailor .content section .content_template .add_find .find_details #filePicker1 .webuploader-pick {
+  height: 2.142857142857143rem;
+  width: 2.142857142857143rem;
+  background: url("../images/uploadImg.png");
+  background-size: 100% 100%;
+  color: black;
+}
+.traveltailor .content section .content_template .add_find .find_details .btnPre {
+  position: absolute;
+  top: 0.7142857142857143rem;
+  left: 40.714285714285715rem;
+  z-index: 9999;
+  background-color: #F6F6F6;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor {
+  width: 61.57142857142857rem;
+  height: 34.285714285714285rem;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 {
+  width: 61.57142857142857rem;
+  height: 34.285714285714285rem;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_iframeholder {
+  height: 30.571428571428573rem!important;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox {
+  height: 2.857142857142857rem;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox #edui1_toolbarboxouter {
+  height: 2.857142857142857rem;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox #edui1_toolbarboxouter #edui2 {
+  position: absolute;
+  top: 0.35714285714285715rem;
+  left: 0.35714285714285715rem;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_bottombar {
+  display: none;
+}
+.traveltailor .content section .content_template .add_find .find_submit {
+  float: left;
+  display: block;
+  width: 7.142857142857143rem;
+  height: 2.857142857142857rem;
+  margin-top: 2.857142857142857rem;
+  margin-left: 5.714285714285714rem;
+  font-size: 1.1428571428571428rem;
+  color: #fff;
+  outline: none;
+  background-color: #008CEE;
+}
+.traveltailor .content section .content_template .add_find .btnPre {
+  margin-left: 5.714285714285714rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview {
+  position: absolute;
+  width: 41.57142857142857rem;
+  height: 70.5rem;
+  background: url("../images/model.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  top: -2.5rem;
+  left: 75rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content {
+  overflow: hidden;
+  width: 24.285714285714285rem;
+  height: 45.714285714285715rem;
+  margin-top: 11.428571428571429rem;
+  margin-left: 5rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_title {
+  font-size: 1.4285714285714286rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  line-height: 2.857142857142857rem;
+  padding-bottom: 1.0714285714285714rem;
+  margin-bottom: 0.7142857142857143rem;
+  word-wrap: break-word;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview-date,
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview-autor {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 2.4285714285714284rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_describe {
+  line-height: 1.7142857142857142rem;
+  margin-top: 1.7857142857142858rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content {
+  line-height: 1.7142857142857142rem;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1 {
+  border: none;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_toolbarbox,
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_bottombar {
+  display: none;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_iframeholder {
+  width: 25.142857142857142rem!important;
+  margin-left: -0.5714285714285714rem;
+}
+.traveltailor .content section .content_template .find {
+  font-size: 1.1428571428571428rem;
+  padding-top: 2.142857142857143rem;
+}
+.traveltailor .content section .content_template .find .find_search {
+  padding-left: 3.357142857142857rem;
+}
+.traveltailor .content section .content_template .find .find_search input {
+  width: 14.285714285714286rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.4285714285714286rem;
+  margin: 0 1.4285714285714286rem;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(1) {
+  background: url("../images/date.png") no-repeat 11.428571428571429rem center;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(2) {
+  background: url("../images/date.png") no-repeat 11.428571428571429rem center;
+}
+.traveltailor .content section .content_template .find .find_search select {
+  width: 10.714285714285714rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.3571428571428572rem;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(4) {
+  width: 21.428571428571427rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.4285714285714286rem;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(5) {
+  width: 10.714285714285714rem;
+  height: 3.5714285714285716rem;
+  background-color: #007ED6;
+  color: #fff;
+  padding-left: 0;
+}
+.traveltailor .content section .content_template .find .find_search a {
+  display: inline-block;
+  line-height: 3.5714285714285716rem;
+  text-align: center;
+  width: 14.285714285714286rem;
+  height: 3.5714285714285716rem;
+  background-color: #007ED6;
+  color: #fff;
+  margin-left: 9.714285714285714rem;
+}
+.traveltailor .content section .content_template .find .table {
+  margin-top: 3.5714285714285716rem;
+  border-bottom: 1px solid #ccc;
+}
+.traveltailor .content section .content_template .find .table th {
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #F5F5F5;
+}
+.traveltailor .content section .content_template .find .table th:first-child {
+  padding-left: 2.857142857142857rem;
+}
+.traveltailor .content section .content_template .find .table td {
+  height: 4.285714285714286rem;
+  line-height: 4.285714285714286rem;
+  width: 17.857142857142858rem;
+}
+.traveltailor .content section .content_template .find .table td:first-child {
+  width: 60.714285714285715rem;
+  padding-left: 2.857142857142857rem;
+}
+.traveltailor .content section .content_template .find .table img {
+  margin-right: 1.4285714285714286rem;
+}
+.traveltailor .content section .content_template .preview {
+  display: none;
+  width: 44.285714285714285rem;
+  margin-left: 37.5rem;
+  height: 100%;
+}
+.traveltailor .content section .content_template .preview .preview_title {
+  font-size: 1.4285714285714286rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  line-height: 4.285714285714286rem;
+  margin-bottom: 0.7142857142857143rem;
+}
+.traveltailor .content section .content_template .preview .preview-date,
+.traveltailor .content section .content_template .preview .preview-autor {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 2.4285714285714284rem;
+}
+.traveltailor .content section .content_template .preview .preview_describe {
+  line-height: 1.7142857142857142rem;
+  margin-top: 1.7857142857142858rem;
+}
+.traveltailor .content section .content_template .preview .preview_content {
+  line-height: 1.7142857142857142rem;
+}

@@ -1,0 +1,129 @@
+.notice{
+	margin-left: 1.25rem;
+	height: 3.75rem;
+	border-bottom: 1px solid #E5E5E5;
+	line-height: 3.75rem;
+	font-weight: bolder;
+	font-size: 0.9375rem;
+}
+.notice i{
+	color: #008BED;
+	padding-right: 1.25rem;
+}
+.title{
+	border-top: 20px solid #F5F5F5;
+	margin-bottom: 2.5rem;
+}
+.content{
+	margin-left: 0.625rem;
+	margin-top: 2.25rem;
+}
+.content p{
+	font-size: 0.875rem;
+	margin-top: 0.875rem;
+	font-weight: bolder;
+
+}
+.content span{
+	text-align: right;
+	width: 7.0625rem;
+	display: inline-block;
+	color: #A7A7A7;
+}
+.content i{
+	color: #FF0000;
+}
+.product-price{
+	width: 97.25rem;
+	margin-left: 2.5rem;
+	margin-top: 1.25rem;
+	color: #A7A7A7;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+.product-price tr td:first-child{
+	width: 14.0625rem;
+}
+.product-price tr td:nth-child(2){
+	width: 16.5625rem;
+}
+.product-price tr td:nth-child(3){
+	width: 11.3125rem;
+}
+.product-price tr:first-child{
+	height: 4.875rem;
+	border-bottom: 1px solid #F5F5F5;
+	vertical-align: top;
+}
+.product-price tr:last-child{
+	height: 3.4375rem;
+	border-bottom: 1px solid #F5F5F5;
+}
+.foodIntroduced{
+	width: 61.5rem;
+	height: 17.8125rem;
+	font-weight: bold;
+	font-size: 0.75rem;
+}
+.foodIntroduced img{
+	width: 6.25rem;
+	height: 4.6875rem;
+	margin-right: 1.25rem;
+}
+.foodIntroduced tr:first-child{
+	height: 3.75rem;
+}
+.foodIntroduced tr:nth-child(2){
+	height: 6.875rem;
+	border-bottom: 1px solid #F5F5F5;
+}
+.foodIntroduced tr:nth-child(3){
+	height: 7.125rem;
+	border-bottom: 1px solid #F5F5F5;
+}
+.foodIntroduced tr td:first-child{
+	padding-left: 5.4375rem;
+	width: 14.75rem;
+}
+.foodIntroduced tr td:nth-child(2){
+	width: 21.875rem;
+}
+.foodIntroduced tr td:nth-child(3){
+	width: 13.0625rem;
+}
+.content ul{
+	margin-left: 7rem;
+	margin-top: -0.9375rem;
+}
+.content ul li{
+	font-weight: bolder;
+	margin-bottom: 0.625rem;
+}
+.content input{
+	width: 54rem;
+	height: 3.125rem;
+	padding-left: 1.25rem;
+	background-color: #F5F5F5;
+	margin-left: 0.625rem;
+}
+.content div{
+	width: 21.25rem;
+	height: 3.125rem;
+	margin-left: 7.5rem;
+	margin-top: 2.375rem;
+}
+.content div a{
+	display: inline-block;
+	width: 9.375rem;
+	height: 3.125rem;
+	border-right: 2px;
+	background-color: #008BED;
+	text-align: center;
+	line-height: 3.125rem;
+}
+.content div a:first-child{
+	float: left;
+}
+.content div a:last-child{
+	float: right;
+}

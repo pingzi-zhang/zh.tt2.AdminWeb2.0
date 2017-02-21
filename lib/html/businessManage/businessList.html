@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>商家列表</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/businessManage/businessList.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+    <div class="title_path">
+        <span>商户管理</span>
+        <span>>商家管理</span>
+        <span class="blue">>商家列表</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+        <div class="busManage">
+            <div class="busList">
+                <form action="" class="form">
+                    销售产品类别&nbsp;
+                    <select class="searchVariety">
+                        <option selected>全部</option>
+                        <option>门票</option>
+                        <option>美食</option>
+                        <option>酒店</option>
+                    </select>
+                    商户号&nbsp;
+                    <input type="text" placeholder="请输入商户号" class="searchCode">
+                    商家名称&nbsp;
+                    <input type="text"  placeholder="请输入商家名称" class="searchName">
+                    <a href="javascript:void (0)" id="search">查询</a>
+                    <a href="addBusiness.html">+新增</a>
+                </form>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>商户号</th>
+                        <th>商家名称</th>
+                        <th>销售产品类别</th>
+                        <th>合同到期</th>
+                        <th>创建时间</th>
+                        <th>创建人</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <p class="no-tit">暂没有商家列表</p>
+            <div class="page">
+                <p>共有 <span></span> 条</p>
+                <div class="pagination paging"></div>
+            </div>
+        </div>
+    </div>
+<!-- 审核模态视图 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">审核提示</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/audit.png" alt=""/></dt>
+                    <dd>
+                        <p>
+                            是否通过 <br/><span class="MerchantName"></span>的商家审核?
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dis">拒绝</button>
+                <button type="button" class="btn btn-primary" id="auditBtn">通过</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 设置帐号模态视图 -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:530px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="ModalLabel">设置帐号</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><i>*</i>管理员帐号</dt>
+                    <dd><input type="text" placeholder="请输入管理员帐号" class="num"/></dd>
+                    <dt><i>*</i>新密码</dt>
+                    <dd><input type="password" placeholder="请输入密码" class="pw"/></dd>
+                    <!--<dt>再次确认：</dt>
+                    <dd><input type="password" placeholder="两次密码要一致" class="pw2"/>
+                        <span class="al-tit">两次密码不一致</span>
+                    </dd>-->
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dismiss">取消</button>
+                <button type="button" class="btn btn-primary" id="submitBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页面渲染 -->
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr id="{{list.MerchantID}}">
+        <td>{{list.Code}}</td>
+        <td>{{list.Name}}</td>
+        <td>{{list.Variety}}</td>
+        <td>{{list.End}}</td>
+        <td>{{list.Create}}</td>
+        <td>{{list.Creator}}</td>
+        <td class="statusName">{{list.StatusName}}</td>
+        <td>
+            <a href="javascript:void (0)" class="audit">审核</a>
+            <a href="javascript:void (0)" class="change">修改</a>
+            <!--<a href="javascript:void (0)" class="proManageBtn">产品管理</a>-->
+            <a href="javascript:void (0)" class="look">查看</a>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../js/lib/jquery.page.js"></script>
+<script src="../../js/businessManage/businessList.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

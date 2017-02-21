@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>结算管理</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/financeManage/balance.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/Config.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+    <div class="title_path"  id="title_path">
+        <span>结算管理</span>
+        <span class="blue">>结算管理</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+        <div class="busManage">
+            <div class="busList">
+                <form action="" class="form">
+                    状态&nbsp;
+                    <select class="status">
+                        <option selected>全部</option>
+                        <option>已结算</option>
+                        <option>已作废</option>
+                    </select>
+                    时间&nbsp;
+                <!--<input type="text" placeholder="2016/11/01" class="searchCode">&nbsp;至&nbsp;
+                <input type="text" placeholder="2016/11/01" class="searchCode">-->
+                <input type="text" value="1900-01-01" class="workinput wicon mr25 orderTime" id="inpstart" readonly required>至&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" value="1900-01-01" id="inpend" class="orderTime" readonly required>
+                    <a href="addBalance.html" id="addOrder">新增结算</a>
+                    <a href="javascript:void (0)" id="search">查询</a>
+                </form>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>结算编码</th>
+                        <th>结算对象</th>
+                        <th>结算金额</th>
+                        <th>结算者</th>
+                        <th>凭证号</th>
+                        <th>状态</th>
+                        <th>结算时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <p class="no-tit">暂没有发现记录</p>
+            <div class="page">
+                <div class="pagination paging"></div>
+            </div>
+        </div>
+    </div>
+<!-- 审核模态视图 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">作废提示</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/wran.jpg" alt=""/></dt>
+                    <dd>
+                        <p>
+                            确定作废<span class="MerchantName">李四</span>的结算?
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dis">返回</button>
+                <button type="button" class="btn btn-primary" id="auditBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr data = "{{list.StatusName}}">
+        <td>{{list.SettID}}</td>
+        <td>{{list.ObjectName}}</td>
+        <td>{{list.Amount}}</td>
+        <td>{{list.ObjectIDName}}</td>
+        <td>{{list.Voucher}}</td>
+        <td>{{list.StatusName}}</td>
+        <td>{{list.Create}}</td>
+        <td data="{{list.SettID}}" name = "{{list.ObjectIDName}}">
+            <!--<a href="javascript:void (0)"><img src="../images/set.png" alt=""></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/editor.png"></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/copy.png" alt=""></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/preview.png"></a>-->
+            <!--<a href="javascript:void (0)"><img src="../images/delect.png"></a>-->
+            <a href="javascript:void (0)" class="audit">作废</a>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../lib/jedate/jedate.js"></script>
+<script src="../../js/lib/jquery.page.js"></script>
+<script src="../../js/financeManage/balance.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

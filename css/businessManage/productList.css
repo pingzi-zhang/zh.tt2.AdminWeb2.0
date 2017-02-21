@@ -1,0 +1,146 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.content_template .productManage {
+  font-size: 1rem;
+  padding-top: 1.875rem;
+}
+.content_template .productManage .busList {
+  padding-left: 2.5rem;
+}
+.content_template .productManage .busList input {
+  /*width: 18.75rem;*/
+ width: 14%;
+  height: 3.125rem;
+  /*padding-left: 1.25rem;
+  margin-right: 2.375rem;*/
+ 	padding-left: 1%;
+  margin-right: 2%;
+}
+.content_template .productManage .busList select {
+  width: 9%;
+  height: 3.125rem;
+  /*padding-left: 1.1875rem;
+  margin-right: 2.8125rem;*/
+ 	padding-left: 1%;
+  margin-right: 2%;
+}
+.content_template .productManage .busList a {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+  color: #fff;
+  padding-left: 0;
+  margin-left: 0.75rem;
+}
+.content_template .productManage .table th{
+	font-weight: bold;
+}
+/*.content_template .productManage .busList #search {
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+  color: #fff;
+  padding-left: 0;
+  margin-left: 0;
+}*/
+.content_template .productManage .table {
+  margin-top: 3.125rem;
+  border-bottom: 1px solid #ccc;
+}
+.content_template .productManage .table th {
+  height: 4.375rem;
+  line-height: 4.375rem;
+  background-color: #F5F5F5;
+  border: none;
+}
+.content_template .productManage .table th:first-child {
+  padding-left: 2.5rem;
+}
+.content_template .productManage .table td {
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 15.625rem;
+  border-top: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+.content_template .productManage .table td:first-child {
+  width: 12.5rem;
+  padding-left: 2.5rem;
+}
+.content_template .productManage .table td:nth-child(2) {
+  width: 15.625rem;
+}
+.content_template .productManage .table td:nth-child(3) {
+  width: 12.5rem;
+}
+.content_template .productManage .table td:nth-child(4) {
+  width: 10.75rem;
+}
+.content_template .productManage .table td:nth-child(5) {
+  width: 11.25rem;
+}
+.content_template .productManage .table td:nth-child(6) {
+  width: 9.375rem;
+}
+.content_template .productManage .table td:nth-child(7) {
+  width: 9.375rem;
+}
+.content_template .productManage .table img {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 1.25rem;
+}
+.content_template .productManage .table a {
+  margin-right: 2.625rem;
+  color: #008cee;
+}
+/*.content_template .productManage{
+  margin-left: 2.5rem;
+  display: none;
+}*/
+.page {
+  width: 100%;
+  padding: 0  5rem 4rem 5rem;
+}
+.page p{
+  float: left;
+}
+.page .paging {
+  float: right;
+  margin: 0;
+}
+.page .paging a,
+.page .paging span {
+  margin-left: 0.875rem;
+  color: #000;
+}
+.page .paging .current {
+  color: #008CEE;
+}
+.page .paging .prev {
+  color: #000;
+}
+.page .paging .next {
+  color: #000;
+}
+.no-tit{
+	display: none;
+	color: #008CEE;
+	font-size: 2rem;
+	margin-left: 3rem;
+}
+.page p span{
+	color: #008CEE;
+}
+input.orderTime{
+	background: url(../../images/date.png) no-repeat 130px center;
+	width: 12.375rem;
+	  height: 3.125rem;
+	  padding-left: 1.25rem;
+}

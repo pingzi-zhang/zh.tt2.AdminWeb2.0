@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../lib/jedate/skin1/jedate.css">
+	<link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+	<link rel="stylesheet" href="../../css/orderManage/addOrderDetail.css">
+</head>
+<body>
+<div class="title_path"  id="title_path">
+	<span>手工下单</span>
+	<span class="blue">>新增订单</span>
+</div>
+<div class="bgc">
+	<header class="title">
+		<p class="notice"><i>▏</i>联系人信息</p>
+		<div class="content">
+			<p>
+				<span><i>*</i>姓名：</span>
+				<input type="text" required="required" id="name" placeholder="请填写">
+				<em>此信息必须填写</em>
+			</p>
+			<p>
+				<span><i>*</i>手机号：</span>
+				<input type="text" required="required" id="tel" placeholder="请填写">
+				<em>此信息必须填写</em>
+			</p>
+			<p>
+				<span><i>*</i>身份证信息：</span>
+				<input type="text" required="required" id="idInfo" placeholder="请填写">
+				<em>此信息必须填写</em>
+			</p>
+			<p>
+				<span><i>*</i>出游日期：</span>
+				<input type="text" value="2017-01-01" class="workinput wicon mr25 orderTime" id="play" readonly required>
+			</p>
+			<div>
+				<span><i>*</i>详细地址:</span>
+				<div id="element_id">
+				  <select class="province"></select>&nbsp;&nbsp;省&nbsp;&nbsp;
+				  <select class="city"></select>&nbsp;&nbsp;市&nbsp;&nbsp;
+				  <select class="area"></select>&nbsp;&nbsp;区
+				</div><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请填写地址</em><br/>
+				<textarea>请填写具体地址：如门牌号。</textarea>
+			</div>
+		</div>
+	</header>
+	<section class="title">
+		<p class="notice"><i>▏</i>产品信息</p>
+		<div class="content">
+			<table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>产品名称</th>
+                        <th>数量</th>
+                        <th>价格</th>
+                        <th>总金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                		<td><img src="../../images/business.png"><span>凉拌木耳</span></td>
+	                	<td>2</td>
+	                	<td>12.00</td>
+	                	<td>24.00</td>
+                	</tr>
+                </tbody>
+            </table>
+            <p class="total">合计:￥24.00</p>
+		</div>
+	</section>
+	<section class="title">
+		<p class="notice"><i>▏</i>付款信息</p>
+		<div class="content">
+			<p>
+				<span><i>*</i>应付金额：</span>
+				<input required="required" type="text" id="payMoney" placeholder="0.00"/>
+				<em>此信息必须填写</em>
+			</p>
+			<p>
+				<span><i>*</i>应付金额：</span>
+				<select>
+					<option>现金</option>
+					<option>转账</option>
+					<option>微信</option>
+					<option>支付宝</option>
+				</select>
+			</p>
+			<p>
+				<span><i>*</i>凭证号：</span>
+				<input required="required" type="text" id="evidenceNo" placeholder="请输入"/>
+				<em>此信息必须填写</em>
+			</p>
+			<p>
+				<span><i>*</i>付款时间：</span>
+				<input type="text" value="2017-01-01" class="workinput wicon mr25 orderTime" id="playTime" readonly required>
+			</p>
+		</div>
+	</section>
+	<footer class="title">
+		<a href="addOrderInfo.html" id="back">上一步</a>
+		<a href="javascript:void (0)" id="savebtn">保存</a>
+	</footer>
+	
+</div>
+	<!--菜品的渲染-->
+	<script type="textml" id="template-tr">
+	    <tr>
+	    	<td>{{value.foodType}}</td>
+	        <td>
+	        	<img src="{{value.foodImg}}" alt=""/>
+	            <span>{{value.foodName}}</span>
+	        </td>
+	        <td>{{value.foodPrice}}</td>
+	        <td>{{value.foodNum}}</td>
+	        <td>{{value.foodUnit}}</td>
+	        <td>
+	            <span class="del" id="del">{{"删除"}}</span>
+	            <br>
+	            <span class="_edit">{{"编辑"}}</span>
+	        </td>
+	    </tr>
+	</script>
+	<script src="../../js/Config.js"></script>
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../../lib/webuploader/webuploader.min.js"></script>
+	<script src="../../lib/jedate/jquery.jedate.min.js"></script>
+	<script src="../../lib/jQuery.cxSelect-1.3.11/js/jquery.cxselect.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/orderManage/addOrderDetail.js"></script>
+	<!--网站后台配置js文件-->
+	<script src="../../js/lib/Global.js"></script>
+	 
+	<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

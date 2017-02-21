@@ -1,0 +1,202 @@
+@charset "utf-8";
+.logo_bg {
+  width: 100%;
+  height: 32%;
+  background: url("../images/logo-bg.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.user_name,
+.password,
+.checkCode {
+  position: relative;
+}
+.user_name em,
+.password em {
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
+  color: red;
+  display: none;
+}
+.login,
+.changePwd {
+  width: 28.125rem;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+}
+.login input,
+.changePwd input,
+.login button,
+.changePwd button {
+  width: 28.125rem;
+  height: 3.4375rem;
+  margin-bottom: 1.5rem;
+  outline-color: #008CEE;
+  box-sizing: border-box;
+  padding-left: 0.9375rem;
+}
+.login span {
+  display: none;
+  position: absolute;
+}
+.changePwd span,
+.changePwd span
+ {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  color: red;
+  text-indent: 1rem;
+}
+.checkCode span{
+	left: 0;
+}
+.login button,
+.changePwd button {
+  margin-top: 2.5rem;
+  background-color: #008CEE;
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 0px;
+}
+.login .remember_pwd,
+.changePwd .remember_pwd {
+  height: 1.5rem;
+  width: 3.125rem;
+  text-align: right;
+}
+.login .remember_pwd span,
+.changePwd .remember_pwd span {
+  display: inline-block;
+  float: left;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.login .remember_pwd span .hidden,
+.changePwd .remember_pwd span .hidden {
+  display: none;
+}
+.login .remember_pwd span:nth-of-type(3){
+	margin-left: 20rem;
+}
+.login .remember_pwd span a{
+	color: #333;
+	text-decoration: underline;
+}
+.login .remember_pwd .select,
+.changePwd .remember_pwd .select {
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-right: 1.4375rem;
+  position: relative;
+}
+.login .remember_pwd .select img,
+.changePwd .remember_pwd .select img {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.login .remember_pwd a{
+	background-color: #;
+	float: left;
+	width: 5rem;
+}
+.changePwd .vCode {
+  width: 18.75rem;
+}
+.changePwd .getvCode {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 8.125rem;
+  height: 3.4375rem;
+  background-color: #008CEE;
+  line-height: 3.4375rem;
+  margin-left: 0.875rem;
+}
+footer {
+  width: 100%;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  text-align: center;
+  background-color: #F5F5F5;
+  border-top: 1px solid #ccc;
+  color: #00a0e9;
+  position: fixed;
+  bottom: 0;
+  font-weight: bold;
+}
+#Modal .modal-content,
+#myModal .modal-content{
+  background-color: #FAFAFA;
+}
+#Modal .modal-header,
+#myModal .modal-header{
+  background-color: #008CEE;
+  color: #fff;
+}
+#Modal  .modal-body .dl-horizontal dd input,
+#myModal .modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 25rem;
+  height: 3.4285714285714284rem;
+}
+#Modal  .modal-footer,
+#myModal .modal-footer{
+  text-align: center;
+}
+
+#myModal .modal-body .dl-horizontal dt,
+#Modal .modal-body .dl-horizontal dt{
+  width: 12.5rem;
+  color: #a9a9a9;
+  line-height: 10.714285714285714rem;
+}
+#myModal .modal-body .dl-horizontal dd,
+#Modal .modal-body .dl-horizontal dd{
+	padding-top: 4rem;
+  margin-left: 13.928571428571429rem;
+  line-height: 1.428571rem;
+}
+#myModal .modal-body .dl-horizontal dd a, 
+#Modal .modal-body .dl-horizontal dd a{
+	color: #008CEE;
+}
+#myModal .modal-body .dl-horizontal dd p,
+#Modal .modal-body .dl-horizontal dd p{
+  margin-top: 3.5714285714285716rem;
+  line-height: 1.7857142857142858rem;
+  color: #747474;
+}
+#myModal .modal-footer #dis,#auditBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#myModal .modal-footer #dis{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#myModal .modal-footer  #auditBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}
+#Modal .modal-footer #dismiss,#submitBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#Modal .modal-footer #dismiss{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#Modal .modal-footer  #submitBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}

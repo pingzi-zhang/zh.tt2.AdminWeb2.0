@@ -1,0 +1,219 @@
+@charset "utf-8";
+content_template {
+  height: 100%;
+}
+.content_template .productAudit header {
+  height: 5.785714285714286rem;
+  background-color: #fff;
+  border-top: 20px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 2.142857142857143rem;
+}
+.content_template .productAudit header h2 {
+  font-size: 1.1428571428571428rem;
+  line-height: 1.4285714285714286rem;
+  height: 1.4285714285714286rem;
+  font-weight: bold;
+  margin: 1.4285714285714286rem 0 0 1.4285714285714286rem;
+  border-left: 2px solid #008CEE;
+  padding-left: 1.4285714285714286rem;
+}
+.content_template .productAudit section i {
+  color: red;
+}
+.content_template .productAudit section p {
+  height: 5rem;
+  padding-top: 0.7142857142857143rem;
+}
+.content_template .productAudit section p span {
+  width: 8.571428571428571rem;
+  height: 3.5714285714285716rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.5714285714285716rem;
+  padding-right: 0.7142857142857143rem;
+  color: #999999;
+  font-weight: 500;
+}
+.content_template .productAudit section p input {
+  width: 61.714285714285715rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.4285714285714286rem;
+}
+.content_template .productAudit .packageInfo {
+  margin-bottom: 1.7857142857142858rem;
+}
+.content_template .productAudit .packageInfo section p {
+  height: 2.857142857142857rem;
+  padding-top: 0px;
+}
+.content_template .productAudit .packageInfo section p span {
+  height: 2.857142857142857rem;
+  line-height: 2.857142857142857rem;
+}
+.content_template .productAudit .packageInfo section p em {
+  height: 2.857142857142857rem;
+}
+.content_template .productAudit .packageInfo section p em img{
+  width: 7.714286rem;
+  height: 7.714286rem;
+}
+.content_template .productAudit .packageInfo section .packageInfo_img {
+  height: 7.142857142857143rem;
+}
+.content_template .productAudit .productPrice {
+  margin-bottom: 1.7857142857142858rem;
+}
+.content_template .productAudit .productPrice section p {
+  /*margin-left: 2.857142857142857rem;
+  width: 67.5rem;*/
+  height: 2.857142857142857rem;
+  padding-top: 0px;
+}
+.content_template .productAudit .productPrice section p span {
+  /*border-bottom: 1px solid #ddd;
+  width: 17.857142857142858rem!important;*/
+  height: 2.857142857142857rem;
+  line-height: 2.857142857142857rem;
+}
+.content_template .productAudit .productPrice section p em {
+  height: 2.857142857142857rem;
+}
+.content_template .productAudit .foodIntroduce {
+  margin-top: 2.857142857142857rem;
+}
+.content_template .productAudit .foodIntroduce section table {
+  width: 95.35714285714286rem;
+}
+.content_template .productAudit .foodIntroduce section table thead {
+  background-color: #F2F9FE;
+}
+.content_template .productAudit .foodIntroduce section table thead tr th {
+  padding: 0;
+  border-bottom: none;
+  height: 4.285714285714286rem;
+  line-height: 4.285714285714286rem;
+}
+.content_template .productAudit .foodIntroduce section table tbody tr td {
+  height: 7.928571428571429rem;
+  padding: 0;
+  line-height: 7.928571428571429rem;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  width: 9.857142857142858rem!important;
+}
+.content_template .productAudit .foodIntroduce section table tbody tr td .media a img{
+  width: 10.714285714285714rem;
+  height: 7.142857142857143rem;
+}
+.content_template .productAudit .foodIntroduce section table th:first-child,
+.content_template .productAudit .foodIntroduce section table td:first-child {
+  padding-left: 6.428571428571429rem;
+}
+.content_template .productAudit .packageIntroduce {
+  margin-top: 2.142857142857143rem;
+}
+.content_template .productAudit .packageIntroduce section p .packageIntroduce_describe {
+  display: inline-block;
+  height: 82.14285714285714rem;
+  width: 62.142857142857146rem;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+.content_template .productAudit .packageIntroduce section p:first-child {
+  height: 82.14285714285714rem;
+}
+.content_template .productAudit .packageIntroduce section p:first-child span {
+  vertical-align: top;
+}
+.content_template .productAudit .buyNotice section em p{
+	margin-left: 9rem;
+}
+.content_template .productAudit .buyNotice section em p:nth-of-type(1){
+	display: inline-block;
+	margin-left: 0;
+}
+.content_template .productAudit .buyNotice section p {
+  height: 2.4285714285714284rem;
+  line-height: 2.4285714285714284rem;
+  padding-top: 0px;
+}
+.content_template .productAudit .buyNotice section p span {
+  height: 2.4285714285714284rem;
+  line-height: 2.4285714285714284rem;
+}
+.content_template .productAudit .buyNotice section p:nth-child(4) {
+  height: 14.285714285714286rem;
+}
+.content_template .productAudit .buyNotice section p:nth-child(4) span {
+  height: 1.8571428571428572rem;
+  line-height: 1.8571428571428572rem;
+}
+.content_template .productAudit .buyNotice section p:nth-child(4) em {
+  height: 1.8571428571428572rem;
+  line-height: 1.8571428571428572rem;
+  /*padding-left: 8.857142857142858rem;*/
+}
+.content_template .productAudit .buyNotice section p:nth-child(4) .buyNotice_first {
+  padding-left: 0px;
+}
+.content_template .productAudit .auditInfo section select {
+  width: 14.285714285714286rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1rem;
+}
+.content_template .productAudit footer {
+  margin-top: 2.142857142857143rem;
+  height: 13.928571428571429rem;
+  border-top: 20px solid #F5F5F5;
+  padding-left: 8rem;
+}
+.content_template .productAudit footer a,
+.content_template .productAudit footer input {
+  display: inline-block;
+  line-height: 3.5714285714285716rem;
+  text-align: center;
+  width: 10.714285714285714rem;
+  height: 3.5714285714285716rem;
+  background-color: #007ED6;
+  color: #fff;
+  margin: 2.857142857142857rem 2.857142857142857rem 0 0;
+}
+.rule span{
+		width: 8.571428571428571rem;
+    height: 3.5714285714285716rem;
+    display: inline-block;
+    text-align: right;
+    line-height: 3.5714285714285716rem;
+    padding-right: 0.7142857142857143rem;
+    color: #999999;
+    font-weight: 500;
+    height: 2.4285714285714284rem;
+    line-height: 2.4285714285714284rem;
+    vertical-align: top;
+}   
+.rule div{
+	display: inline-block;
+}
+.content_template .productAudit .buyNotice section .rule p {
+    height: 2.4285714285714284rem;
+}
+.rule{
+	padding-bottom: 3rem;
+}
+#proAlbum span{
+	height: 2.857142857142857rem;
+  line-height: 2.857142857142857rem;
+	width: 8.571428571428571rem;
+	height: 3.5714285714285716rem;
+	display: inline-block;
+	text-align: right;
+	line-height: 3.5714285714285716rem;
+	padding-right: 0.7142857142857143rem;
+	color: #999999;
+}
+#proAlbum img{
+	margin-right: 2rem;
+	width: 10rem;
+	height: 9rem;
+}

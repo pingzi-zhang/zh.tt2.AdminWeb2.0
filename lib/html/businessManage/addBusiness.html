@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>商家新增</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/businessManage/addBusiness.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+    <section>
+        <div class="title_path">
+            <span>商户管理</span>
+            <span>>商家管理</span>
+            <span class="blue">>商家新增</span>
+        </div>
+        <div class="content_template" ui-view>
+            <div class="busAdd">
+                <form id="myForm">
+                <div class="baseInfo">
+                    <header>
+                        <h2>基本资料</h2>
+                    </header>
+                    <section>
+                        <p>
+                            <span><i>* </i>商家名称</span>
+                            <input type="text" placeholder="请填写商家名称" required="required" id="busName">
+                            <em class="help-block"><s></s>商家名称必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>简称</span>
+                            <input type="text" placeholder="请填写" required="required" id="busBrief">
+                            <em class="help-block"><s></s>简称必须填写</em>
+                        </p>
+                        <div class="select" id="busIndustry">
+                            <span><i>* </i>行业</span>
+                            <div class="on"><s></s>美食</div>
+                            <div><s></s>景区</div>
+                            <div><s></s>酒店</div>
+                        </div>
+                        <div class="select" id="busVariety">
+                            <span><i>* </i>销售产品类型</span>
+                            <div class="on"><s></s>美食</div>
+                            <div><s></s>门票</div>
+                            <div><s></s>酒店</div>
+                            <em class="gray mgl-25">(可多选)</em>
+                        </div>
+                        <div class="select" id="busCrowd">
+                            <span><i>* </i>商家身份</span>
+                            <div class="on"><s></s>企业</div>
+                            <div><s></s>个体</div>
+                            <div><s></s>个人</div>
+                        </div>
+                        <p>
+                            <span><i>* </i>联系人</span>
+                            <input type="text" placeholder="请填写" required="required" id="busLinkman">
+                            <em class="help-block"><s></s>联系人必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>联系电话</span>
+                            <input type="text" placeholder="请填写" required="required" id="busTelephone">
+                            <em class="help-block"><s></s>联系电话必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>邮箱地址</span>
+                            <input type="email" placeholder="请填写" required="required" id="busMail">
+                            <em class="help-block"><s></s>邮箱地址必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>经营地址</span>
+                            <input type="text" placeholder="请填写" required="required" id="busAddress">
+                            <em class="help-block"><s></s>经营地址必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>营业执照</span>
+                            <input type="text" placeholder="请填写" required="required" id="busLicense">
+                            <em class="help-block"><s></s>营业执照必须填写</em>
+                        </p>
+                        <div class="license_pic" id="busLicenseP">
+                            <span><i>* </i>营业执照图片</span>
+                            <div class="upload_photo">
+                                <!--<div id="thelist" class="uploader-list"></div>-->
+                                <div id="filePicker"></div>
+                                <em class="help-block tips_suc"><s></s>图片上传成功</em>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="contractInfo clearfix">
+                    <header>
+                        <h2>合同信息</h2>
+                    </header>
+                    <section>
+                        <p>
+                            <span><i>* </i>合同有效期</span>
+                            <input type="text" class="workinput wicon mr25" id="inpstart" readonly required="required">
+                            &nbsp;至&nbsp;
+                            <input type="text" id="inpend" readonly required="required" >
+                        </p>
+                        <div class="select" id="busPayMode">
+                            <span><i>* </i>付款方式</span>
+                            <div class="on">
+                                <s></s>
+                                <p>A、自甲方信息发布/约定功能上线之日起，1周后甲方可以从乙方指定账户提现至甲方银行账户；距上一次提现日或乙方/乙方关联方/乙方合作方主动打款日1周及以上时，甲方可以</p>
+                                <p>再次提现；每当距上一次提现或自甲方信息发布之日起每隔4周时，甲方未提现，乙方/乙方关联方/乙方合作方主动将代收净额中已标记信息但未结算的金额支付到甲方银行账户。</p>
+                            </div>
+                            <div>
+                                <s></s>
+                                <p>B、自甲方信息发布/约定功能上线之日起，乙方/乙方关联方/乙方合作方主动将代收净额中已标记消费结算的金额达到1000元，甲方可以从乙方指定账户提现至甲方银行账户。</p>
+                                <p class="gray">（如遇周末、节假日，则推迟到下一个工作日结算。）</p>
+                            </div>
+                        </div>
+                        <div class="select_get" id="busGetMode">
+                            <span><i>* </i>收款方式</span>
+                            <s></s>
+                            <div>银行汇款，将款项付至甲乙双方约定的乙方账户</div>
+                            <s></s>
+                            <div>对接乙方指定账户的POS机打款</div>
+                            <s></s>
+                            <div>在线充值，甲方通过商家中心自助充值</div>
+                            <div class="gray">（甲方可选择其中一种方式进行打款） </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="bankInfo">
+                    <header>
+                        <h2>银行账号信息</h2>
+                    </header>
+                    <section>
+                        <p>
+                            <span><i>* </i>户名</span>
+                            <input type="text" placeholder="请填写" id="busBankCode" required="required">
+                            <em class="help-block"><s></s>户名必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>银行全称</span>
+                            <input type="text" placeholder="请填写" id="busBank" required="required">
+                            <em class="help-block"><s></s>银行全称必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>银行账号</span>
+                            <input type="text" placeholder="请填写" id="busAccount" required="required">
+                            <em class="help-block"><s></s>银行账号必须填写</em>
+                        </p>
+                        <p>
+                            <span>支付宝账号</span>
+                            <input type="text" placeholder="请填写" id="busAlipay">
+                        </p>
+                    </section>
+                </div>
+                <div class="others">
+                    <header>
+                        <h2>其它补充</h2>
+                    </header>
+                    <section>
+                        <div class="select" id="busAgency">
+                            <span><i>* </i>代收款</span>
+                            <div class="on">
+                                <s></s>
+                                <p>甲方同意乙方将应结算给甲方的代收款项转为推广技术服务费</p>
+                            </div>
+                            <div>
+                                <s></s>
+                                <p>甲方不同意乙方将应结算给甲方的代收款项转为推广技术服务费</p>
+                                <p class="gray">（如果甲方因未及时在商家中心操作导致推广技术服务费不足，乙方有权暂停甲方推广技术服务）</p>
+                            </div>
+                        </div>
+                        <div class="others_pic" id="busContract">
+                            <span><i>* </i>合同附件</span>
+                            <div class="upload_photo">
+                                <!--<div id="thelist2" class="uploader-list"></div>-->
+                                <div id="filePicker2"></div>
+                                <em class="help-block tips_suc2"><s></s>图片上传成功</em>
+                            </div>
+                        </div>
+                        <p>
+                            <span>备注</span>
+                            <input type="text" placeholder="请填写" id="busRemark">
+                        </p>
+                    </section>
+                </div>
+                <footer>
+                    <a href="businessList.html">取消</a>
+                    <a href="javascript:void (0)" id="busSubmit">保存</a>
+                    <!--<input type="submit" id="busSubmit" value="保存">-->
+                </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script src="../../lib/jedate/jedate.js"></script>
+<script src="../../js/businessManage/addBusiness.js"></script>
+<script src="../../js/lib/jquery.validate.min.js"></script>
+<script src="../../js/lib/messages_zh.min.js"></script>
+<script src="../../js/common.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+
+
+</body>
+</html>

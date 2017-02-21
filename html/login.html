@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>登录</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="logo_bg">
+  </div>
+  <form class="login">
+      <div class="user_name">
+          <input type="tel" name="username" placeholder="手机号" required>
+          <em>* 您输入的手机格式有误,请重新输入</em>
+      </div>
+      <div class="password">
+          <input type="password" name="password" placeholder="密码" required>
+          <em>* 请输入密码</em>
+      </div>
+      <div class="remember_pwd">
+          <span class="select">
+              <img src="../images/selected.png">
+          </span>
+          <span>记住我</span>
+          <span><a href="changePassword.html">忘记密码?</a></span>
+      </div>
+      <button type="button" class="login_btn">登录</button>
+  </form>
+  <footer>Copyright © 2016 traveltailor.cn All Rights Reserved 蜀ICP备16021940号-2</footer>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <!--网站后台配置js文件-->
+  <script src="../js/lib/Global.js"></script>
+  <script src="../js/lib/crypto-js.js"></script>
+  <script src="../js/Config.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

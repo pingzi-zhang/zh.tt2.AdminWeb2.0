@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>新增地推</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/VIPManage/addPush.css">
+    <link rel="stylesheet" type="text/css" href="../../js/lib/IIInsomniaCityPicker/css/city-picker.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+    <section>
+        <div class="title_path"  id="title_path">
+            <span>会员管理</span>
+            <span>>地推管理</span>
+            <span class="blue">>新增地推</span>
+        </div>
+        <div class="content_template" ui-view>
+           <form id="addPush" class="addPush">
+           	  <i class="warn">*为必填项，请确保信息填写完整</i>
+           		<p>
+                    <span><i>* </i>姓名</span>
+                    <input type="text" placeholder="请输入姓名" required="required" id="name">
+                    <em class="help-block"><s></s>姓名必须填写</em>
+                </p>
+                <div class="select" id="sex">
+                    <span><i>* </i>性别</span>
+                    <div><s></s>男</div>
+                    <div ><s></s>女</div>
+                    <em class="help-block"><s></s>请勾选</em>
+                </div>
+                <p>
+                    <span><i>* </i>手机号</span>
+                    <input type="text" placeholder="请输入手机号" required="required" id="tel">
+                    <em class="help-block"><s></s>手机号必须填写</em>
+                </p>
+                <p>
+                    <span><i>* </i>服务城市</span>
+                    <input type="text" id="cityChoice" placeholder="请选择服务城市" readonly="readonly">
+                    <em class="help-block"><s></s>服务城市必须填写</em>
+                </p>
+                <p>
+                    <span><i>* </i>出生日期</span>
+                    <input type="text" class="workinput wicon mr25" id="birthday" readonly required="required">
+                </p>
+                <div class="part">
+                	<span><i>* </i>一句话</span>
+                	<input id="introduce"></input>
+                	<em class="help-block"><s></s>请写一句话</em>
+                </div>
+                <div class="part">
+                	<span><i>* </i>自我介绍</span>
+                	<!--<textarea id="hobby"></textarea>-->
+                	<script id="hobby" type="text/plain" name="content" ng-model="content"></script>
+                	<em class="help-block"><s></s>请先介绍自己</em>
+                </div>
+                <div class="product_img part" id="productImg">
+                    <span><i>* </i>头像</span>
+                    <div class="upload_photo" id="fitstPic">
+                        <!--<div id="thelist2" class="uploader-list"></div>-->
+                        <div id="product_img"></div>
+                        <em class="help-block tips_suc2"><s></s>图片上传成功</em>
+                    </div>
+                    <span class="tipUser">请上传一张照片作为头像</span>
+                </div>
+                <div class="product_album part" id="productAlbum">
+                    <span><i>* </i>我的相册</span>
+                    <div class="upload_photo">
+                        <div id="product_album_list">
+                            <s></s>
+                           <!-- <div><img src="../../images/business.png" alt=""></div>
+                            <div><img src="../../images/order.jpg" alt=""></div> 
+                            <div><img src="../../images/business.png" alt=""></div>
+                            <div><img src="../../images/order.jpg" alt=""></div> 
+                            <div><img src="../../images/business.png" alt=""></div>
+                            <div><img src="../../images/order.jpg" alt=""></div> 
+                            <div><img src="../../images/business.png" alt=""></div>
+                            <div><img src="../../images/order.jpg" alt=""></div> 
+                            <div><img src="../../images/business.png" alt=""></div>-->
+                            <div id="product_album"></div>
+                            <span class="tipUser">请上传5-10张个人照片,好的照片能提高成功率哦~</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="fistPoto part" id="Selfie">
+                    <span><i>* </i>我的首图</span>
+                    <div class="upload_photo" id="SelfiePic">
+                        <!--<div id="thelist2" class="uploader-list"></div>-->
+                        <div id="fistPoto"></div>
+                        <em class="help-block tips_suc2"><s></s>图片上传成功</em>
+                    </div>
+                    <span class="tipUser">请上传一张个人照片,好的照片才能更好的展示~</span>
+                </div>
+           </form>
+           <footer>
+           		<a id="saveBtn">修改</a>
+           </footer>
+        </div>
+    </section>
+script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script type="text/javascript" src="../../js/lib/IIInsomniaCityPicker/js/cityData.js"></script>
+<script type="text/javascript" src="../../js/lib/IIInsomniaCityPicker/js/IIInsomniaCityPicker.js"></script>
+<script src="../../js/lib/jquery.validate.min.js"></script>
+<script src="../../lib/ueditor/ueditor.config.js"></script>
+<script src="../../lib/ueditor/ueditor.all.js"></script>
+<script src="../../js/lib/messages_zh.min.js"></script>
+<script src="../../js/Config.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../lib/jedate/jedate.js"></script>
+<script src="../../js/VIPManage/changePush.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

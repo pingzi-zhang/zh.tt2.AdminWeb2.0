@@ -1,0 +1,100 @@
+@charset "utf-8";
+.logo_bg {
+  width: 100%;
+  height: 32%;
+  background: url("../images/logo-bg.png");
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%;
+}
+.user_name,.password {
+  position: relative;
+  em {
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    color: red;
+    display: none;
+  }
+}
+.login,.changePwd {
+  width: 28.125rem;
+  margin:0 auto;
+  margin-top:3.75rem;
+  input,button {
+    width: 28.125rem;
+    height: 3.4375rem;
+    margin-bottom:1.5rem;
+    outline-color: #008CEE;
+    box-sizing: border-box;
+    padding-left: 0.9375rem;
+  }
+  span {
+    display: none;
+    position: absolute;
+  }
+  button {
+    margin-top:2.5rem;
+    background-color: #008CEE;
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 0px;
+  }
+  .remember_pwd {
+    height: 1.5rem;
+    width: 3.125rem;
+    text-align: right;
+    span {
+      display: inline-block;
+      float: left;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      .hidden {
+        display: none;
+      }
+    }
+    .select {
+      width: 1.5rem;
+      height: 1.5rem;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      margin-right: 1.4375rem;
+      position: relative;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+}
+.changePwd {
+  .vCode {
+    width: 18.75rem;
+  }
+  .getvCode {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 8.125rem;
+    height: 3.4375rem;
+    background-color: #008CEE;
+    line-height: 3.4375rem;
+    margin-left:0.875rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 3.125rem;
+  line-height:3.125rem;
+  text-align: center;
+  background-color: #F5F5F5;
+  border-top: 1px solid #ccc;
+  color: #00a0e9;
+  position: fixed;
+  bottom: 0;
+  font-weight: bold;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+	<link rel="stylesheet" href="../../css/orderManage/addOrderInfo.css">
+</head>
+<body>
+<div class="title_path"  id="title_path">
+	<span>人工下单</span>
+	<span class="blue">>订单详情</span>
+</div>
+<div class="bgc">
+	<header class="title">
+		<p class="notice"><i>▏</i>管家信息</p>
+		<div class="content">
+			<p>
+				<span><i>*</i>管家姓名：</span>
+				<input type="text" value="请选择" readonly="readonly" id="name"/>
+			</p>
+		</div>
+	</header>
+	<section class="title">
+		<p class="notice"><i>▏</i>产品信息</p>
+		<div class="content">
+			<table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>产品名称</th>
+                        <th>数量</th>
+                        <th>价格</th>
+                        <th>总金额</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+          </table>
+          <div id="total">
+          	<p class="total">合计:￥<em>24.00</em></p>
+            <a href="javascript:void (0)" id="addBtn">+添加产品</a>
+          </div>
+          <div class="empty" id="empty">
+          	<p>现在还没有添加产品,请前去添加产品</p>
+          	<a href="javascript:void (0)" id="addPro">+添加产品</a>
+          </div>
+		</div>
+	</section>
+	<footer>
+		<a href="artificialOrder.html" id="return">取消</a>
+    	<a href="javascript:void (0)" id="nextbtn">下一步</a>
+	</footer>
+</div>
+<!-- 新增产品模态视图 -->
+<div class="modal fade" id="addProModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel1">新增产品</h4>
+            </div>
+            <div class="modal-body">
+	            <table class="table">
+	                <thead>
+	                    <tr>
+	                    	<th></th>
+	                        <th>产品名称</th>
+	                        <th></th>
+	                        <th>价格</th>
+	                        <th>数量</th>
+	                        <th>金额</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                	<!--<tr>
+	                    	<td><s></s></td>
+	                    	<td><img src="../../images/order.jpg"></td>
+	                    	<td>4-6人精品套餐</td>
+	                    	<td>12.00</td>
+	                    	<td><input type="text" placeholder="请填写数量"></td>
+	                    	<td>90.00</td>
+	                    </tr>
+	                    <tr>
+	                    	<td><s></s></td>
+	                    	<td><img src="../../images/order.jpg"></td>
+	                    	<td>4-6人精品套餐</td>
+	                    	<td>12.00</td>
+	                    	<td><input type="text" placeholder="请填写数量"></td>
+	                    	<td>90.00</td>
+	                    </tr>
+	                    <tr>
+	                    	<td><s></s></td>
+	                    	<td><img src="../../images/order.jpg"></td>
+	                    	<td>4-6人精品套餐</td>
+	                    	<td>12.00</td>
+	                    	<td><input type="text" placeholder="请填写数量"></td>
+	                    	<td>90.00</td>
+	                    </tr>-->
+	                </tbody>
+	            </table>
+            </div>
+            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	                <button type="button" class="btn btn-primary" id="okBtn1">保存</button>
+	        </div>
+        </div>
+    </div>
+</div>
+<!-- 管家模态视图 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">管家列表</h4>
+            </div>
+            <div class="modal-body">
+	            <div class="searchWrap">
+	            	<input type="text" id="TName" placeholder="请输入管家姓名"/>
+	            	<a href="javaScript:void(0)" class="search" id="search"></a>
+	            </div>
+	            <table class="table">
+	                <thead>
+	                    <tr>
+	                        <th>管家手机号</th>
+	                        <th>管家姓名</th>
+	                        <th>操作</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+						<!--<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>
+						<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>
+						<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>
+						<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>
+						<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>
+						<tr>
+							<td>18255418982</td>
+		                	<td>张大大</td>
+		                	<td><s></s></td>
+						</tr>-->
+	                </tbody>
+	            </table>
+	            <div class="page">
+	                <p>共有 <span></span> 条</p>
+	                <div class="pagination paging"></div>
+	            </div>
+            </div>
+            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	                <button type="button" class="btn btn-primary" id="okBtn">保存</button>
+	        </div>
+        </div>
+    </div>
+</div>
+<!--弹出框的管家渲染-->
+<script type="text/html" id="steward">
+    {{each items as list index}}
+    <tr>
+        <td data="{{list.TailorID}}">{{list.Mobile}}</td>
+        <td>{{list.Name}}</td>
+        <td><s></s></td>
+    </tr>
+    {{/each}}
+</script>
+<!--菜品的渲染-->
+<script type="textml" id="template-tr">
+	{{each items as list index}}
+    <tr>
+        <td><s class="flag"></s></td>
+    	<td><img src="{{list.FirstUrl}}"></td>
+    	<td>{{list.Name}}</td>
+    	<td>{{list.SellPrice}}</td>
+    	<td><input type="text" placeholder="请填写数量" class="number" value="1"></td>
+    	<td>{{list.SellPrice}}</td>
+    </tr>
+    {{/each}}
+</script>
+<!--<td><img src="../../images/business.png"><span>凉拌木耳</span></td>
+    	<td>2</td>
+    	<td>12.00</td>
+    	<td>24.00</td>
+    	<td><a href="#"></a></td>-->
+<!--主页面的菜品的渲染-->
+<script type="textml" id="main-tr">
+	{{each items as list index}}
+    <tr>
+    	<td><img src="{{list.FirstUrl}}"><span>{{list.Name}}</span></td>
+    	<td>{{list.Number}}</td>
+    	<td>{{list.SellPrice}}</td>
+    	<td class="totlPrice">{{list.Tatol}}</td>
+    	<td>
+    		<a href="javascript:void (0)" class="edit">编辑</a>
+    		<a href="javascript:void (0)" class="Del">删除</a>
+    	</td>
+    </tr>
+    {{/each}}
+</script>
+	<script src="../../js/Config.js"></script>
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../../lib/webuploader/webuploader.min.js"></script>
+	<script src="../../lib/jedate/jquery.jedate.min.js"></script>
+	<script src="../../js/lib/template.js"></script>
+	<script src="../../js/lib/jquery.page.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/orderManage/addOrderInfo.js"></script>
+	<!--网站后台配置js文件    -->
+	<script src="../../js/lib/Global.js"></script>
+	 
+	<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

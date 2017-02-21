@@ -1,0 +1,51 @@
+.notice{
+	margin-left: 1.25rem;
+	height: 3.75rem;
+	border-bottom: 1px solid #E5E5E5;
+	line-height: 3.75rem;
+	font-weight: bolder;
+	font-size: 0.9375rem;
+}
+.notice i{
+	color: #008BED;
+	padding-right: 1.25rem;
+}
+.title{
+	border-top: 20px solid #F5F5F5;
+	margin-bottom: 2.5rem;
+}
+.content{
+	margin-left: 0.625rem;
+	margin-top: 2.25rem;
+}
+.content p{
+	font-size: 0.875rem;
+	margin-top: 0.875rem;
+}
+.content span:nth-of-type(odd){
+	text-align: right;
+	width: 8.0625rem;
+	display: inline-block;
+	color: #A7A7A7;
+}
+.content i{
+	color: #FF0000;
+}
+.content .pay{
+	font-size: 0.875rem;
+}
+.content .pay p{
+	margin-left: 8.75rem;
+}
+.content .pay span{
+	font-weight: bolder;
+}
+.content .pay p:last-child{
+	color: #A7A7A7;
+}
+footer{
+	margin-bottom: 5.625rem;
+}
+*{
+	font-weight: bold;
+}

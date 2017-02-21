@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>产品销售明细</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../js/Config.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<div class="traveltailor"> 
+    <nav class="sideBar">
+        <div class="logo">
+            <s></s>
+        </div>
+        <ul id="list">
+            <li class="manage_business"><a href="#"><span class="business_icon icon"></span>商家管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_business" myAttr="./businessManage/businessList.html"><a href="javascript:void (0)">商家管理</a></li>
+            <li class="sub_menu sub_business" myAttr="./businessManage/productList.html"><a href="javascript:void (0)">产品管理</a></li>
+            <!--产品管理-->
+            <!--<li class="manage_product"><a href="#"><span class="product_icon icon"></span>产品管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_product" myAttr="./productManage/productList.html"><a href="javascript:void (0)">门票管理</a></li>
+            <li class="sub_menu sub_product" myAttr="./productManage/productList.html"><a href="javascript:void (0)">特产管理</a></li>
+            <li class="sub_menu sub_product" myAttr="./productManage/productList.html"><a href="javascript:void (0)">美食管理</a></li>-->
+            
+            <li class="manage_vip"><a href="#"><span class="manage_icon icon"></span>会员管理<span class="arrow_icon"></span></a></li>
+            <!--<li class="sub_menu sub_vip" myAttr="./VIPManage/stewardList.html"><a href="javascript:void (0)">管家管理</a></li>-->
+            <li class="sub_menu sub_vip" myAttr="./VIPManage/pushList.html"><a href="javascript:void (0)">地推管理</a></li>
+            
+            <li class="manage_order"><a href="#"><span class="order_icon icon"></span>订单管理<span class="arrow_icon"></span></a></li>
+            <!--<li class="sub_menu sub_order" myAttr="./orderManage/artificialOrder.html"><a href="javascript:void (0)">手工下单</a></li>-->
+            <li class="sub_menu sub_order" myAttr="./orderManage/chargeBack.html"><a href="javascript:void (0)">人工退单</a></li>
+            <li class="sub_menu sub_order" myAttr="./orderManage/customizationList.html"><a href="javascript:void (0)">行程定制</a></li>
+           
+            <li class="manage_find"><a href="#"><span class="market_icon icon"></span>市场管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_find" myAttr="./marketManage/findList.html"><a href="javascript:void (0)">发现</a></li>
+            <!--<li class="sub_menu sub_find"><a href="#">消息</a></li>-->
+           <!-- 报表查询-->
+            <!--<li><a href="#"><span class="report_icon icon"></span>报表查询</a></li>-->
+            <li class="report_Query"><a href="#"><span class="report_icon icon"></span>报表查询<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_report" myAttr="./reportQuery/stewardRanking.html"><a href="javascript:void (0)">地推销售日排行</a></li>
+            <li class="sub_menu sub_report" myAttr="./reportQuery/productRanking.html"><a href="javascript:void (0)">产品销售日排行</a></li>
+            <li class="sub_menu sub_report" myAttr="./reportQuery/orderDetail.html"><a href="javascript:void (0)">产品销售明细</a></li>
+            
+            <li class="manage_finance"><a href="#"><span class="account_icon icon"></span>财务管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_finance" myAttr="./financeManage/finOverview.html"><a href="javascript:void (0)">平台概览</a></li>
+            <li class="sub_menu sub_finance" myAttr="./financeManage/cashManageList.html"><a href="javascript:void (0)">提现管理</a></li>
+            <li class="sub_menu sub_finance" myAttr="./financeManage/balance.html"><a href="javascript:void (0)">结算管理</a></li>
+            
+            
+            <!--<li class="basicData"><a href="#"><span class="base_icon icon"></span>基础数据<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_basicData" myAttr="./basicData/finOverview.html"><a href="javascript:void (0)">行政区域</a></li>
+            <li class="sub_menu sub_basicData" myAttr="./basicData/hotCity.html"><a href="javascript:void (0)">热点城市</a></li>-->
+            
+            <li class="manage_system"><a href="#"><span class="system_icon icon"></span>系统管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_system" myAttr="./systemManage/userList.html"><a href="javascript:void (0)">系统用户</a></li>
+            <li class="sub_menu sub_system" myAttr="./systemManage/changePwd.html"><a href="javascript:void (0)">修改密码</a></li>
+        </ul>
+    </nav>
+    <aside class="content">
+        <header>
+            <div class="header-l fl_left">
+                <span class="title">平台管理系统</span>
+                <span class="date">2016/10/31</span>
+                <span class="time">11:08:42</span>
+            </div>
+            <div class="header-r fl_right">
+                <span class="avatar"></span>
+                <span class="name">张三</span>
+                <span class="status">[管理员]</span>
+                <span class="logout"><a href="./login.html">退出</a></span>
+            </div>
+        </header>
+        <section>
+            <iframe src="businessManage/businessList.html" frameborder="0" id="myIframe" width="100%" height="100%"></iframe>
+        </section>
+    </aside>
+</div>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<!--网站后台配置js文件-->
+<script src="../js/lib/Global.js"></script>
+<script src="../js/lib/crypto-js.js"></script>
+<script>
+    $(".sub_menu").click(function () {
+        var src= $(this).attr("myAttr");
+        $("#myIframe").attr("src",src);
+        $(this).addClass("bgon").siblings().removeClass("bgon");
+    })
+</script>
+</body>
+</html>

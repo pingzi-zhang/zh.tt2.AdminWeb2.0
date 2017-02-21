@@ -1,0 +1,64 @@
+#Modal .modal-content,
+#myModal .modal-content{
+  background-color: #FAFAFA;
+}
+#Modal .modal-header,
+#myModal .modal-header{
+  background-color: #008CEE;
+  color: #fff;
+}
+#Modal  .modal-body .dl-horizontal dd input,
+#myModal .modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 25rem;
+  height: 3.4285714285714284rem;
+}
+#Modal  .modal-footer,
+#myModal .modal-footer{
+  text-align: center;
+}
+
+#myModal .modal-body .dl-horizontal dt,
+#Modal .modal-body .dl-horizontal dt{
+  width: 12.5rem;
+  color: #a9a9a9;
+  line-height: 10.714285714285714rem;
+}
+#myModal .modal-body .dl-horizontal dd,
+#Modal .modal-body .dl-horizontal dd{
+  margin-left: 13.928571428571429rem;
+  line-height: 12.428571rem;
+}
+#myModal .modal-body .dl-horizontal dd p,
+#Modal .modal-body .dl-horizontal dd p{
+  margin-top: 3.5714285714285716rem;
+  line-height: 1.7857142857142858rem;
+  color: #747474;
+}
+#myModal .modal-footer #dis,#auditBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#myModal .modal-footer #dis{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#myModal .modal-footer  #auditBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}
+#Modal .modal-footer #dismiss,#submitBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#Modal .modal-footer #dismiss{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#Modal .modal-footer  #submitBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}

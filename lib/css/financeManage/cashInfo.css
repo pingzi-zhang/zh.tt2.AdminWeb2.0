@@ -1,0 +1,58 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.content_template .cashInfo {
+  font-size: 1rem;
+  padding-top: 1.875rem;
+}
+.cashInfo p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.cashInfo p span {
+  width: 7.5rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.cashInfo p em{
+	display: inline-block;
+}
+.cashInfo p input {
+  width: 20rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+
+.cashInfo .help-block {
+  display: none;
+  color: #ffac4f;
+}
+.cashInfo .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%,100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.cashInfo  a {
+  display: inline-block;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+	color: #fff;
+	line-height: 3.125rem;
+	padding-left: 0;
+  text-align: center;
+  margin: 2rem 1.25rem;
+}
+.cashInfo  a:nth-of-type(1){
+	margin-left: 5rem;
+}
+

@@ -1,0 +1,90 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.content_template {
+  height: 80%;
+}
+.content_template .addUser {
+  margin-top: 3rem;
+}
+.content_template .addUser i {
+  color: red;
+}
+.content_template .addUser p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.content_template .addUser p span {
+  width: 9rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.content_template .addUser p input {
+  width: 500px;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+.content_template .addUser .help-block {
+/*	display: inline-block;*/
+	line-height: 1rem;
+  display: none;
+  color: #3595EC;
+}
+.content_template .addUser .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%,100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.content_template .addUser .select {
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+.content_template .addUser .select span {
+  width: 9rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  float: left;
+}
+.content_template .addUser .select div {
+  float: left;
+  width: 5rem;
+  margin-left: 0.25rem;
+}
+.content_template .addUser .select div s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  float: left;
+  margin: 0.625rem 0.625rem 0 0px;
+}
+.content_template .addUser .select .on {
+  color: #00a0e9;
+}
+.content_template .addUser .select .on s {
+  border-color: #00a0e9;
+  background: url("../../images/selected.png") -0.125rem -0.125rem;
+  background-size: 120% 120%;
+}
+.content_template .addUser a {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+.content_template .addUser .cancel {
+  margin-left: 9rem;
+}

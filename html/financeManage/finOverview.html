@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+		<title>提现管理</title>
+		<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!--TODO 自己项目的文件-->
+		<!--[if lt IE 9]>
+		    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+		    <script src="../../lib/respond/respond.js"></script>
+	    <![endif]-->
+	    <link rel="stylesheet" href="../../css/common.css">
+	    <link rel="stylesheet" href="../../css/financeManage/finOverview.css">
+	    <script src="../../lib/jquery/jquery.min.js"></script>
+	    <script src="../../js/Config.js"></script>
+	    <script src="../../js/common.js"></script>
+	</head>
+	<body>
+		<div class="title_path"  id="title_path">
+	        <span>财务管理</span>
+	        <span class="blue">>提现管理</span>
+	    </div>
+		<section>
+			<div class="kg1"></div>
+			<div class="money">
+				<ul>
+					<li>
+						<h3>总所入(元)</h3>
+						<p></p>
+					</li>
+					<li>
+						<h3>已提现(元)</h3>
+						<p></p>
+					</li>
+					<li>
+						<h3>即将到账(元)</h3>
+						<p></p>
+					</li>
+					<li>
+						<h3>余额(元)</h3>
+						<p></p>
+					</li>
+				</ul>
+			</div>
+			<div class="kg2">
+				<h2 class="tilte2">收支明细</h2>
+			</div>
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>收支明细</th>
+							<th>金额</th>
+							<th>收/支</th>
+							<th>发生时间</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<img id="loadImg" src="../../images/load.gif"/>
+				<p class="content no-tit">您暂无收支情况</p>
+			</div>
+		</section>
+		<footer>
+			<div class="page">
+				<p>共有 <span></span> 条</p>
+				<div class="pagination paging"></div>
+			</div>
+		</footer>
+	</body>
+	<!--模板数据渲染-->
+	<script type="text/html" id="template">
+		{{each items as list index}}
+		<tr>
+			<td>{{list.Orderform}}</td>
+			<td>{{list.Amount.toFixed(2)}}</td>
+			<td>{{list.Direction}}</td>
+			<td>{{list.Create}}</td>
+		</tr>
+		{{/each}}
+	</script>
+	<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../../js/lib/template.js"></script>
+	<script src="../../lib/jedate/jedate.js"></script>
+	<script src="../../js/lib/jquery.page.js"></script>
+	<script src="../../js/financeManage/finOverview.js"></script>
+	<!--网站后台配置js文件-->
+	<script src="../../js/lib/Global.js"></script>
+	 
+	<script src="../../js/lib/crypto-js.js"></script>
+</html>

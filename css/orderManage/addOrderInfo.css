@@ -1,0 +1,425 @@
+.bgc{
+	background-color: #f5f5f5;
+	height: 100%;
+}
+.title_path{
+	background-color: #FFFFFF;
+}
+.notice{
+	margin-left: 1.25rem;
+	height: 3.75rem;
+	border-bottom: 1px solid #E5E5E5;
+	line-height: 3.75rem;
+	font-weight: bolder;
+	font-size: 1.0714285714285714rem;
+}
+.notice i{
+	color: #008BED;
+	padding-right: 1.25rem;
+}
+.title{
+	border-top: 20px solid #F5F5F5;
+	padding-bottom: 2.5rem;
+	background-color: #FFFFFF;
+}
+.content{
+	margin-left: 0.625rem;
+	margin-top: 2.25rem;
+}
+footer a,#addBtn {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #007ED6;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+footer a:nth-of-type(1),#addBtn{
+	margin-left: 7.857142857142857rem;
+}
+.content p{
+	font-size: 0.875rem;
+	margin-top: 0.875rem;
+}
+
+.content #table a{
+	color:#008cee;
+}
+#total{
+	display: none;
+}
+#total em{
+	color: #008cee;
+}
+.content #table tbody td input{
+	height: 2rem;
+	width: 5rem;
+}
+.content span:nth-of-type(odd){
+	text-align: right;
+	width: 8.0625rem;
+	display: inline-block;
+	color: #A7A7A7;
+}
+.content i{
+	color: #FF0000;
+}
+.content .pay{
+	font-size: 0.875rem;
+}
+.content .pay p{
+	margin-left: 8.75rem;
+}
+.content .pay span{
+	font-weight: bolder;
+}
+.content .pay p:last-child{
+	color: #A7A7A7;
+}
+footer{
+	margin-bottom: 5.625rem;
+}
+*{
+	color: #333333;
+}
+table{
+	width: 105rem;
+	margin-top: 2.857142857142857rem;
+}
+.content table th{
+	background-color: #f2f9fe;
+	height: 4.285714285714286rem;
+	border: none !important;
+	
+}
+div.empty{
+	text-align: center;
+	padding: 7.5rem 0 2.142857142857143rem 0;
+	margin-bottom: 1.4285714285714286rem;
+}
+div.empty p{
+	margin: 0;
+}
+div.empty a{
+	height: 2.857142857142857rem;
+	line-height: 2.857142857142857rem;
+	color: #008cee;
+}
+#table tr th{
+	line-height: 4.285714285714286rem !important;
+}
+#table tr th:nth-of-type(1),
+#table tr td:nth-of-type(1){
+	padding-left: 7.857142857142857rem;
+	width: 57.142857142857146rem;
+}
+.content table td{
+	border-top: none !important;
+	border-bottom: 1px solid #ddd;
+}
+#table span{
+	text-align: left;
+	margin-left: 1.4285714285714286rem;
+	color: #666666;
+}
+#table td{
+	vertical-align: middle;
+	color: #666666;
+}
+#table td img{
+	width: 7.142857142857143rem;
+	height: 5.357142857142857rem;
+}
+.content .total{
+	text-align: right;
+	font-size: 1.2857142857142858rem;
+	color: #008cee;
+	padding-right: 15.714285714285714rem;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 0.8571428571428571rem;
+}
+.content input{
+	width: 21.428571428571427rem;
+	height: 3.5714285714285716rem;
+	line-height: 3.5714285714285716rem;
+	padding-left: 1rem;
+	color: #333333;
+	border-radius: 0;
+}
+#addProModal .modal-body{
+	height: 32rem;
+}
+
+#addProModal .modal-body{
+	margin-top: 2.857142857142857rem;
+	height: 25rem;
+	overflow: auto;
+}
+#addProModal .modal-body table.table{
+	margin: 0;
+}
+#myModal .modal-body textarea,
+#addProModal .modal-body textarea
+{
+	height: 12rem;
+    width: 26rem;
+	
+}
+#myModal .modal-body span,
+#addProModal .modal-body span{
+	  vertical-align: top;
+    margin-left: 3.5rem;
+    margin-right: 1rem;
+}
+#myModal .modal-content,
+#addProModal .modal-content{
+  background-color: #FAFAFA;
+  width: 57.142857142857146rem;
+  height: 39.142857142857146rem;
+}
+#addProModal .modal-content{
+	height: 38.714285714285715rem;
+}
+#myModal .modal-header,
+#addProModal .modal-header{
+  background-color: #008CEE;
+  color: #fff;
+}
+
+#myModal .modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 25rem;
+  height: 3.4285714285714284rem;
+}
+#myModal .modal-body s,
+#addProModal .modal-body s{
+	color: #ff0000;
+}
+#myModal .modal-footer,
+#addProModal .modal-footer{
+  text-align: center;
+}
+#myModal .modal-footer button,
+#addProModal .modal-footer button{
+	width: 10.571428571428571rem;
+	height: 3.4285714285714284rem;
+}
+#addProModal .modal-footer{
+	border: none;
+}
+#myModal .modal-footer .btn-primary,
+#addProModal .modal-footer .btn-primary {
+	background-color: #008cee;
+  border-color: #008cee;
+}
+/*#myModal .modal-footer #dis,#auditBtn,
+#addPro .modal-footer #dis,#auditBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}*/
+#myModal .modal-footer #dis{
+  color: #008CEE;
+  background-color: #FAFAFA;
+  border-color: #008CEE;
+}
+#myModal .modal-footer  #auditBtn{
+  background-color: #008CEE;
+  margin-left: 2.857142857142857rem;
+}
+#myModal .modal-body p{
+	overflow: hidden;
+	margin-bottom: 0.7142857142857143rem;
+	/*display: inline-block;*/
+}
+/*#myModal .pagination{
+	float: right;
+	margin-top: 0;
+}*/
+/*#myModal .pagination a{
+	color: #000;
+}*/
+.page {
+  width: 100%;
+  padding-right: 5rem;
+  overflow: hidden;
+}
+.page .paging {
+  float: right;
+}
+.page .paging a,
+.page .paging span {
+  margin-left: 0.875rem;
+  color: #000;
+}
+.page .paging .current {
+  color: #008CEE;
+}
+.page .paging .prev {
+  color: #000;
+}
+.page {
+  width: 100%;
+  padding: 0  5rem 4rem 5rem;
+  display: none;
+}
+.page p{
+  float: left;
+}
+.page .paging {
+  float: right;
+  margin: 0;
+}
+.page .paging a,
+.page .paging span {
+  margin-left: 0.875rem;
+  color: #000;
+}
+.page .paging .current {
+  color: #008CEE;
+}
+.page .paging .prev {
+  color: #000;
+}
+.page .paging .next {
+  color: #000;
+}
+.page p span{
+	color: #008CEE;
+}
+#myModal .modal-body input{
+	float: left;
+	width: 11.571428571428571rem;
+	height: 2.7142857142857144rem;
+	border: 1px solid #c9c9c9;
+	border-right: 0;
+	padding-left: 0.5rem;
+	border-radius: 4px 0 0 4px;
+}
+#myModal .modal-body div.searchWrap{
+	float: right;
+}
+#myModal .modal-body div a.search{
+	display: inline-block;
+	float: left;
+	width: 2.7142857142857144rem;
+	height: 2.7142857142857144rem;
+	border: 1px solid #c9c9c9;
+	border-left: 0;
+	border-radius: 0 4px 4px 0;
+	background-color: #FFFFFF;
+	background:url(../../images/serchIcon.jpg) center no-repeat;
+}
+#myModal .modal-body s ,
+#addProModal .modal-body s{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    float: left;
+    margin: 0.625rem 0.625rem 0 0px;
+}
+#myModal .modal-body table td{
+	border-bottom: 1px solid #ddd;
+	padding: 0.2857142857142857rem 0;
+	vertical-align: middle;
+	padding-left: 0.7142857142857143rem;
+}
+#myModal .modal-body table td:nth-of-type(1),
+#myModal .modal-body table th:nth-of-type(1){
+	padding-left: 2.142857142857143rem;
+}
+#myModal .modal-body table{
+	margin-top: 1.4285714285714286rem;
+	margin-bottom: 0.7142857142857143rem;
+	height: 19rem;
+}
+.page{
+	height: 2.142857142857143rem;
+	line-height: 2.142857142857143rem;
+	padding-left: 2.142857142857143rem;
+}
+#myModal .modal-body .page span{
+	margin-left: 0.875rem;
+}
+#myModal .modal-body .on{
+    border-color: #00a0e9;
+    background: url(../../images/selected.png) -0.125rem -0.125rem;
+    background-size: 120% 120%;
+}
+#addProModal .modal-body .on{
+    border-color: #00a0e9;
+    background: url(../../images/selected.png) -0.125rem -0.125rem;
+    background-size: 120% 120%;
+}
+#addProModal .modal-body s{
+	border-radius: 0;
+}
+#addProModal .modal-body{
+	padding: 0;
+}
+#addProModal .modal-body table tr th{
+	background-color: #edf4f9;
+	height: 4.285714285714286rem;
+	line-height: 4.285714285714286rem;
+	padding: 0;
+}
+#addProModal .modal-body table tr th,
+#addProModal .modal-body table tr td{
+	border: none;
+	padding: 0;
+	vertical-align: middle;
+}
+#addProModal .modal-body table.table tbody tr{
+	height: 7.785714285714286rem;
+	box-sizing:content-box;
+	border-bottom: 1px solid #e6e6e6;
+}
+#addProModal .modal-body table tr th:nth-of-type(1),
+#addProModal .modal-body table tr td:nth-of-type(1){
+	width: 6.785714285714286rem;
+	padding-left: 2.142857142857143rem;
+	padding-bottom: 1.4285714285714286rem;
+}
+#addProModal .modal-body table tr td img{
+	width: 7.142857142857143rem;
+	height: 5.357142857142857rem;
+}
+#addProModal .modal-body table tr th:nth-of-type(2),
+#addProModal .modal-body table tr td:nth-of-type(2){
+	padding: 0;
+	width: 8.571428571428571rem;
+}
+#addProModal .modal-body table tr th:nth-of-type(4),
+#addProModal .modal-body table tr td:nth-of-type(4){
+	width: 7.142857142857143rem;
+	padding: 0;
+}
+#addProModal .modal-body table tr th:nth-of-type(3),
+#addProModal .modal-body table tr th:nth-of-type(5),
+#addProModal .modal-body table tr td:nth-of-type(3),
+#addProModal .modal-body table tr td:nth-of-type(5){
+	width: 13.214285714285714rem;
+	padding: 0;
+}
+#addProModal .modal-body table tr td:nth-of-type(6){
+	width: 6.142857142857143rem;
+}
+#addProModal .modal-body table tr td input{
+	border-radius: 0;
+	width: 5.571428571428571rem;
+	height: 1.8571428571428572rem;
+	border: 1px solid #808080;
+}
+#addProModal .modal-body{
+	/*height: 21.642857142857142rem;
+	overflow: auto;*/
+}
+.modal-body{
+	padding-bottom: 0;
+}
+ #addProModal .modal-body .page .paging span {
+    margin-left: 0.875rem;
+}

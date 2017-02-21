@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>新增结算</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/select/css/combo.select.css">
+    <link rel="stylesheet" href="../../css/financeManage/addBalance.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path">
+    	<span>财务管理</span>
+        <span>>财务管理</span>
+        <span class="blue">>新增结算</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+        <div class="addBalance">
+            <form>
+                <p>
+                    <span><i>* </i>结算对象:</span>
+                    <select class="searchVariety" id="type">
+                        <option value="商家">商家</option>
+                        <option value="管家">管家</option>
+                    </select>
+                </p>
+                <p>
+                    <span><i>* </i>结算者:</span>
+                    <select class="searchVariety">
+						<option value="">月份</option>
+						<option value="一月">一二月</option>
+						<option value="二月">二月</option>
+						<option value="三月">三月</option>
+						<option value="四月">四月</option>
+						<option value="五月">五发的月</option>
+						<option value="六月">六地方月</option>
+						<option value="七月">七发的月</option>
+						<option value="八月">八月</option>
+						<option value="九月">九ddf月</option>
+						<option value="十月">十月</option>
+						<option value="十一月">十一月</option>
+						<option value="十二月">十二月</option>
+					</select>
+                    <em>请选择结算对象</em>
+                </p>
+                <p>
+                    <span><i>* </i>结算金额</span>
+                    <input type="text"  required="required" placeholder="请输入" id="money">
+                    <em>账户金额&nbsp;<i class="balance">12</i>&nbsp;元</em>
+                </p>
+                <p>
+                    <span><i>* </i>凭证号</span>
+                    <input type="text"  required="required" id="voucher" placeholder="请输入">
+                    <em>请输入凭证号</em>
+                </p>
+                <p>
+                    <span><i>* </i>结算时间</span>
+                    <input type="text"  required="required"  readonly="readonly">
+                </p>
+            </form>
+        </div>
+    </div>
+    <a href="balance.html" id="return">返回</a>
+    <a href="javascript:void (0)" id="btn">保存</a>
+</section>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/select/js/jquery.combo.select.js"></script>
+<script src="../../js/financeManage/addBalance.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

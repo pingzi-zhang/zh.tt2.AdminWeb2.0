@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN"  ng-app="myModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>添加发现</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../css/marketManage/addFind.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body  ng-controller="myController">
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path">
+        <span>市场管理</span>
+        <span>>发现</span>
+        <span class="blue">>添加发现</span>
+    </div>
+    <div class="content_template">
+                    <div class="add_find" ng-app="myModule">
+                        <form >
+                            <p><span>发现标题</span> <input type="text" name="findTitle" ng-model="title" id="title"><em class="help-block"><s></s>必须填写</em></p>
+                            <p><span>发现描述</span> <input type="text" name="findDescribe" id="describe"><em class="help-block"><s></s>必须填写</em></p>
+                            <div class="find_photo">
+                                <span>发现首图</span>
+                                <div class="upload_photo">
+                                    <div id="thelist" class="uploader-list"></div>
+                                    <div id="filePicker"></div>
+                                </div>
+                                <span>上传注意事项:jpg、png格式，尺寸为50x50像素，大小为20-100kb</span>
+                            </div>
+                            <div class="find_details">
+                                <span>发现详情</span>
+                                <!--<input type="button" class="btnPre" value="预览">-->
+                                <script id="editor" type="text/plain" name="content" ng-model="content"></script>
+                                <div id="filePicker1">上传图片</div>
+                            </div>
+                            <input type="button" class="find_submit" value="保存">
+                        </form>
+                        <div class="mobile_preview">
+                            <div class="mobile_preview_content">
+                                <h2 class="preview_title">{{title}}</h2>
+                                <p class="preview_content">{{content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</section>
+<!--bootstrap弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 350px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">请先上传图片</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-primary" id="auditBtn">同意审核</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--引用的第三方库文件-->
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/ueditor/ueditor.config.js"></script>
+<script src="../../lib/ueditor/ueditor.all.js"></script>
+<script src="../../lib/angular/angular.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<!--项目文件-->
+<script src="../../js/marketManage/addFind.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

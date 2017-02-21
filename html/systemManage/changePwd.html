@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>修改密码</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/changePwd.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/Config.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path"  id="title_path">
+        <span>系统管理</span>
+        <span class="blue">>修改密码</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+                <div class="changePwd">
+                    <form>
+                       <!-- <p>
+                            <span><i>* </i>手机号</span>
+                            <input type="tel" placeholder="请输入手机号" required="required" id="tel">
+                            <em class="help-block"><s></s>手机号必须填写</em>
+                        </p>-->
+                        <p>
+                            <span><i>* </i>原密码</span>
+                            <input type="password" placeholder="请输入原密码" required="required" id="oldPwd">
+                            <em class="help-block"><s></s>原密码必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>新密码</span>
+                            <input type="password" placeholder="请输入新密码" required="required" id="newPwd">
+                            <em class="help-block"><s></s>新密码必须填写</em>
+                        </p>
+                        <p>
+                            <span><i>* </i>确认密码</span>
+                            <input type="password" placeholder="请输入" required="required" id="surePwd">
+                            <em class="help-block"><s></s>必须填写</em>
+                        </p>
+                        <a href="javascript:void (0)" id="btn">保存</a>
+                    </form>
+                </div>
+            </div>
+</section>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/systemManage/resetPwd.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

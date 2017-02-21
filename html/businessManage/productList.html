@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>产品列表</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/businessManage/productList.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../js/Config.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="title_path"  id="title_path">
+        <span>>产品管理</span>
+        <span class="blue">>产品列表</span>
+    </div>
+    <div class="bgc"></div>
+    <div class="content_template">
+        <div class="productManage">
+            <div class="busList">
+                <form action="" class="form">
+                    产品状态&nbsp;
+                    <select class="searchVariety">
+                        <option selected>全部</option>
+                        <option>未提交</option>
+                        <option>已提交</option>
+                        <option>已上架</option>
+                        <option>已下架</option>
+                        <option>未通过</option>
+                    </select>
+                    商户名称&nbsp;
+                    <input type="text" placeholder="请输入商户名称" class="searchCode" id="searchCode">
+                    产品名称&nbsp;
+                    <input type="text"  placeholder="请输入产品名称" class="searchName" id="searchName">
+                    <a href="javascript:void (0)" id="search">查询</a>
+                </form>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>产品号</th>
+                        <th>产品名称</th>
+                        <th>商家名称</th>
+                        <th>产品分类</th>
+                        <th>分销价</th>
+                        <th>门店价</th>
+                        <th>产品状态</th>
+                        <th>提交时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <img id="loadImg" src="../../images/load.gif"/>
+            <p class="no-tit">暂没有产品列表</p>
+            <div class="page">
+                <p>共有 <span></span> 条</p>
+                <div class="pagination paging"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr id="{{list.MerchantID}}">
+        <td>{{list.Code}}</td>
+        <td>{{list.ProductName}}</td>
+        <td>{{list.MerchantName}}</td>
+        <td>{{list.VarietyName}}</td>
+        <td>{{list.Buy.toFixed(2)}}</td>
+        <td>{{list.Market.toFixed(2)}}</td>
+        <td id="status">{{list.StatusName}}</td>
+        <td>{{list.Create}}</td>
+        <td data="{{list.Variety1}}">
+            <a href="javascript:void (0)" class="audit">查看</a>
+            <a href="javascript:void (0)" class="submit">审核</a>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../js/lib/jquery.page.js"></script>
+<script src="../../js/businessManage/productList.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/lib/Global.js"></script>
+ 
+<script src="../../js/lib/crypto-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+/*公共css样式*/
+/*初始化css样式*/
+/*html {overflow-y: hidden;}*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+
+}
+
+em,s,i,b{
+    font-style: normal;
+    font-weight: normal;
+}
+html {
+    height: 100%;
+    /*overflow:hidden;*/
+    /*font-size: 0.875rem;*/
+    /*zoom:0.85;*/
+}
+body {
+    font: 0.875rem "微软雅黑", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "微软雅黑", Tahoma, Arial, ”Helvetica Neue“, ”Hiragino Sans GB”, Simsun, sans-self;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link,a:visited,a:hover,a:active {
+    color: #fff;
+    text-decoration: none;
+}
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+;}
+
+p {
+    word-wrap: break-word
+}
+
+button {
+    text-align: center;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #008CEE;
+    color: #fff;
+}
+.header {
+    width: 100%;
+}
+
+/*文本框的样式*/
+input,select{
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    border: 1px solid #e3e3e3;
+    padding-left: 0.25rem;
+    outline: none;
+}
+input:focus {
+    border: 1px solid #008CEE;
+}
+button {
+    border-radius: 0.2rem;
+    border: none;
+}
+/*火狐兼容性问题*/
+input:focus{outline:none;}
+input:required:invalid{box-shadow: none;-moz-box-shadow:none}
+a { outline: none;}
+a:focus {outline: none;}
+/*左右浮动以及清除浮动*/
+.fl_left {
+    float: left
+}
+
+.fl_right {
+    float: right
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*颜色*/
+.gray {
+    color: #A7A7A7;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: #008CEE;
+}
+
+.mgl-25 {
+    margin-left:-1.5625rem;
+}
+
+.hide {
+    display: none;
+}
+.disInb {
+    display: inline-block;
+}
+.rotate {
+    transform:rotate(0deg)!important;
+}
+
+/*侧边栏公用样式*/
+.traveltailor {
+    width: 100%;
+    height: 100%;
+}
+.traveltailor .sideBar {
+    width: 15.625rem;
+    height: 100%;
+    background-color: #008CEE;
+    float: left;
+}
+.traveltailor .sideBar .logo s {
+    display: block;
+    margin-left: 2.4375rem;
+    margin-top: 2.6875rem;
+    margin-bottom: 2.625rem;
+    width: 10.75rem;
+    height: 2.8125rem;
+    background: url("../images/TT_logo.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.traveltailor .sideBar ul li a{
+    font-size: 1rem;
+    height: 3.75rem;
+    width: 100%;
+    display: block;
+    padding-left: 5rem;
+    line-height: 3.75rem;
+    position: relative;
+}
+.traveltailor .sideBar ul li a:hover {
+    background-color: #007ED6;
+}
+.traveltailor .sideBar ul li .business_icon {
+    background: url("../images/busManage.png");
+}
+.traveltailor .sideBar ul li .manage_icon {
+    background: url("../images/manage.png");
+}
+.traveltailor .sideBar ul li .travel_icon {
+    background: url("../images/travel.png");
+}
+.traveltailor .sideBar ul li .product_icon {
+    background: url("../images/product.png");
+}
+.traveltailor .sideBar ul li .order_icon {
+    background: url("../images/order.png");
+}
+.traveltailor .sideBar ul li .market_icon {
+    background: url("../images/askMarket.png");
+}
+.traveltailor .sideBar ul li .report_icon {
+    background: url("../images/report.png");
+}
+.traveltailor .sideBar ul li .account_icon {
+    background: url("../images/account.png");
+}
+.traveltailor .sideBar ul li .base_icon {
+    background: url("../images/baseData.png");
+}
+.traveltailor .sideBar ul li .system_icon {
+    background: url("../images/system.png");
+}
+.traveltailor .sideBar ul li .arrow_icon {
+    width: 0.6875rem;
+    height: 0.4375rem;
+    display: block;
+    position: absolute;
+    background: url("../images/next.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    top: 1.6875rem;
+    right: 1.125rem;
+    transform:rotate(-90deg)
+}
+.traveltailor .sideBar ul li .icon {
+    display: block;
+    width: 1.375rem;
+    height: 1.25rem;
+    left: 2.5rem;
+    top: 1.25rem;
+    position: absolute;
+    background-size: 100% 100%;
+}
+.traveltailor .sideBar ul .sub_menu a {
+    font-size: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 5.625rem;
+}
+.traveltailor .sideBar ul .sub_menu a:hover {
+    background-color: #1997EF;
+}
+.traveltailor .sideBar ul .bgon {
+    background-color: #1997EF;
+}
+.traveltailor .sideBar ul .now {
+    background-color: #007ED6;
+}
+.traveltailor .content {
+    padding-left: 15.625rem;
+    width: 100%;
+    height: 100%;
+}
+.traveltailor .content header {
+    width: 100%;
+    height: 7%;
+    background-color: #F5F5F5;
+    line-height: 4.375rem;
+}
+.traveltailor .content section {
+    width: 100%;
+    height: 92%;
+}
+.traveltailor .content header span {
+    float: left;
+}
+.traveltailor .content header .header-l .title {
+    font-size: 1.25rem;
+    margin-left: 2.5rem;
+    margin-right: 1.25rem;
+}
+.traveltailor .content header .header-l .date {
+    margin-right: 0.625rem;
+}
+.traveltailor .content header .header-r .avatar {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: #E6E6E6;
+    margin-top: 0.8125rem;
+}
+.traveltailor .content header .header-r .name {
+    margin: 0 0.3125rem 0 1.125rem;
+}
+.traveltailor .content header .header-r .logout {
+    margin: 0 2.5rem 0 1.25rem;
+}
+.traveltailor .content header .header-r .logout a {
+    color: #000;
+}
+.title_path {
+    height:4rem;
+    line-height: 4rem;
+    padding-left:2.5rem;
+}
+.no-tit{
+	color:#008cee;
+	font-size: 2rem;
+	margin-left: 2rem;
+	display: none;
+}
+#loadImg{
+	position: relative;
+	left: 51rem;
+	display: none;
+}
+.title_path span{
+	-moz-user-select:none;/*火狐*/
+	-webkit-user-select:none;/*webkit浏览器*/
+	-ms-user-select:none;/*IE10*/
+	-khtml-user-select:none;/*早期浏览器*/
+	user-select:none;
+	cursor: pointer;
+}

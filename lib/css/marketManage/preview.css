@@ -1,0 +1,273 @@
+@charset "utf-8";
+.traveltailor .content section .title_path {
+  margin: 32px 0 20px 40px;
+}
+.traveltailor .content section .content_template {
+  height: 100%;
+}
+.traveltailor .content section .content_template .add_find {
+  padding-left: 40px;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find p span {
+  font-weight: bold;
+}
+.traveltailor .content section .content_template .add_find p input {
+  width: 864px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 21px;
+}
+.traveltailor .content section .content_template .add_find .find_photo {
+  height: 190px;
+}
+.traveltailor .content section .content_template .add_find .find_photo span:first-child {
+  float: left;
+  margin-top: 37px;
+  font-weight: bold;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo {
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo #thelist {
+  display: none;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.traveltailor .content section .content_template .add_find .find_photo .upload_photo #filePicker .webuploader-pick {
+  margin-top: 20px;
+  float: left;
+  width: 200px;
+  height: 150px;
+  background: url("../images/photo.png");
+  margin-left: 25px;
+}
+.traveltailor .content section .content_template .add_find .find_photo span:last-child {
+  font-weight: 300;
+  float: left;
+  margin-top: 88px;
+  margin-left: 21px;
+}
+.traveltailor .content section .content_template .add_find .find_details {
+  margin-left: 80px;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_details span {
+  position: absolute;
+  font-weight: bold;
+  top: 15px;
+  left: -80px;
+}
+.traveltailor .content section .content_template .add_find .find_details #filePicker1 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 5px;
+  left: 600px;
+  z-index: 9999;
+}
+.traveltailor .content section .content_template .add_find .find_details #filePicker1 .webuploader-pick {
+  height: 30px;
+  width: 30px;
+  background: url("../images/uploadImg.png");
+  background-size: 100% 100%;
+  color: black;
+}
+.traveltailor .content section .content_template .add_find .find_details .btnPre {
+  position: absolute;
+  top: 10px;
+  left: 570px;
+  z-index: 9999;
+  background-color: #F6F6F6;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor {
+  width: 862px;
+  height: 480px;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 {
+  width: 862px;
+  height: 480px;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_iframeholder {
+  height: 428px!important;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox {
+  height: 40px;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox #edui1_toolbarboxouter {
+  height: 40px;
+  position: relative;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_toolbarbox #edui1_toolbarboxouter #edui2 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.traveltailor .content section .content_template .add_find .find_details #editor #edui1 #edui1_bottombar {
+  display: none;
+}
+.traveltailor .content section .content_template .add_find .find_submit {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 80px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  background-color: #008CEE;
+}
+.traveltailor .content section .content_template .add_find .btnPre {
+  margin-left: 80px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview {
+  position: absolute;
+  width: 582px;
+  height: 987px;
+  background: url("../images/model.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  top: -35px;
+  left: 1050px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content {
+  overflow: hidden;
+  width: 340px;
+  height: 640px;
+  margin-top: 160px;
+  margin-left: 70px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_title {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  line-height: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview-date,
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview-autor {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 34px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_describe {
+  line-height: 24px;
+  margin-top: 25px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content {
+  line-height: 24px;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1 {
+  border: none;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_toolbarbox,
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_bottombar {
+  display: none;
+}
+.traveltailor .content section .content_template .add_find .mobile_preview .mobile_preview_content .preview_content #edui1_iframeholder {
+  width: 352px!important;
+  margin-left: -8px;
+}
+.traveltailor .content section .content_template .find {
+  font-size: 16px;
+  padding-top: 30px;
+}
+.traveltailor .content section .content_template .find .find_search {
+  padding-left: 47px;
+}
+.traveltailor .content section .content_template .find .find_search input {
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  margin: 0 20px;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(1) {
+  background: url("../images/date.png") no-repeat 160px center;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(2) {
+  background: url("../images/date.png") no-repeat 160px center;
+}
+.traveltailor .content section .content_template .find .find_search select {
+  width: 150px;
+  height: 50px;
+  padding-left: 19px;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(4) {
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+  color: #cccccc;
+}
+.traveltailor .content section .content_template .find .find_search input:nth-child(5) {
+  width: 150px;
+  height: 50px;
+  background-color: #007ED6;
+  color: #fff;
+  padding-left: 0;
+}
+.traveltailor .content section .content_template .find .find_search a {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: #007ED6;
+  color: #fff;
+  margin-left: 136px;
+}
+.traveltailor .content section .content_template .find .table {
+  margin-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.traveltailor .content section .content_template .find .table th {
+  height: 70px;
+  line-height: 70px;
+  background-color: #F5F5F5;
+}
+.traveltailor .content section .content_template .find .table th:first-child {
+  padding-left: 40px;
+}
+.traveltailor .content section .content_template .find .table td {
+  height: 60px;
+  line-height: 60px;
+  width: 250px;
+}
+.traveltailor .content section .content_template .find .table td:first-child {
+  width: 850px;
+  padding-left: 40px;
+}
+.traveltailor .content section .content_template .find .table img {
+  margin-right: 20px;
+}
+.traveltailor .content section .content_template .preview {
+  display: none;
+  width: 620px;
+  margin-left: 525px;
+  height: 100%;
+}
+.traveltailor .content section .content_template .preview .preview_title {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+.traveltailor .content section .content_template .preview .preview-date,
+.traveltailor .content section .content_template .preview .preview-autor {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 34px;
+}
+.traveltailor .content section .content_template .preview .preview_describe {
+  line-height: 24px;
+  margin-top: 25px;
+}
+.traveltailor .content section .content_template .preview .preview_content {
+  line-height: 24px;
+}
