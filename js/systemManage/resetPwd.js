@@ -7,7 +7,6 @@ $(function () {
     $("#oldPwd,#newPwd,#surePwd").blur(function () {
         validate($(this));
     });
-//  $("#tel").val(13);
 	$("#oldPwd").blur(function () {
         if ($(this).val()!="") {
         	var pwd = $(this).val();
